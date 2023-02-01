@@ -1,0 +1,36 @@
+@import url(reset.css);
+/* .nav__list{
+   color: blue;
+} */
+div.introduction{
+   color: red;
+}
+.beginning.title{
+   color: yellow;
+}
+.beginning, 
+.middle{
+   color: green;
+}
+.middle h2{
+   color: blue;
+}
+.last *{
+   color: red;
+}
+.header__container > div{
+   color: blue;
+}
+.header__container + h2{
+   color: red;
+}
+.term{
+   color: green;
+}
+.term  ~ a{
+   color: blueviolet;
+}
+
+[class*="__title"]{
+   color: blue;
+}
