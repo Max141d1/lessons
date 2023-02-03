@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Multiround Pro';
+    src: url('MultiroundProRegular.woff2') format('woff2'),
+        url('MultiroundProRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Morning Breeze';
+    src: url('MorningBreezeRegular.woff2') format('woff2'),
+        url('MorningBreezeRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Morning Breeze';
+    src: url('MorningBreezeBold.woff2') format('woff2'),
+        url('MorningBreezeBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Morning Breeze';
+    src: url('MorningBreezeItalic.woff2') format('woff2'),
+        url('MorningBreezeItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Morning Breeze';
+    src: url('MorningBreezeLight.woff2') format('woff2'),
+        url('MorningBreezeLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
