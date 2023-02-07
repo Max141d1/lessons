@@ -1,0 +1,57 @@
+@import url(reset.css);
+
+ .main{
+   margin: 60px 0 0 0;
+   font-family: "Poppins" ;
+   font-weight: 300;
+   line-height: 25px;
+   color: #6C757D; 
+ }
+ .content{
+   max-width: 816px;
+   margin: 0 auto;
+   margin-bottom: 80px;
+ }
+
+ .text > p{
+   margin: 0px 0px 40px 0px;
+}
+
+.section-1__title{
+   max-width: 400px;
+  
+}
+[class*="__title"]{
+   color: #212529;
+   font-weight: 700;
+   font-size: 25px;
+   line-height: 40px;
+   margin: 0px 0px 40px 0px;
+}
+
+.main-img{
+   text-align: center;
+   margin-bottom: 80px;
+}
+.deset-img{
+   max-width: 100%;
+   
+}
+
+ .section-2__title{
+   max-width: 685px;
+ }
+ .images{
+   text-align: center;
+   margin-bottom: 80px;
+
+ }
+.last-images{
+   display: inline-block;   
+}
+.img-01{
+   padding-right: 30px;
+}
+
+
+
