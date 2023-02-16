@@ -1,0 +1,44 @@
+@import url(reset.css);
+body{
+   font-family: "Poppins", sans-serif;
+   font-weight: 300;
+   font-size: 14px;
+   line-height: 1.8; /* 25/14 */
+   color: #6C757D;
+}
+[class*="__container"]{
+   max-width: 1270px;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+.wrapper__text-block{
+   width: 816px;
+   margin: 0 auto;
+}
+.wrapper__text-block p{
+   padding-bottom: 30px;
+}
+.header-img{
+   width: 100%;
+   margin-bottom: 100px;
+   
+}
+.wrapper__title{
+   font-weight: 700;
+   font-size: 25px;
+   line-height: 1.6; /* 40/25 */
+   color: #212529;
+   margin-bottom: 100px;
+}
+ .images{
+   font-size: 0;
+   margin-bottom: 100px;
+}
+  .image{
+   max-width: 100%;
+   
+  }
+
+  .img_01{
+   margin-right: 30px;
+  }
