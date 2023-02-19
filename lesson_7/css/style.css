@@ -76,9 +76,10 @@
   
   
   .main__banner{
+   font-family: 'Inter';
+   font-weight: 600;
    font-size: 16px;
    line-height: 1.5;
-   font-family: 'Inter';
   }
   .banner__block{
    background: url(../img/speaker.png) right no-repeat;
@@ -88,7 +89,6 @@
   }
 .banner__price{
    color: #3056D3;
-   font-weight: 600;
    font-size: 18px;
    line-height: 1.3; /* 24/18 */
    margin-bottom: 13px;
@@ -110,7 +110,6 @@
 }
 .banner__button{
    color: #FFFFFF;
-   font-weight: 600;
    background-color: #3056D3;
    display: inline-block;
    padding: 10px 30px;
