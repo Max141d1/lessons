@@ -28,10 +28,10 @@ padding: 330px 15px 0px 15px;
 .hader__date, .header__tiitle{
    margin-bottom: 15px;
    color: #F8F9FA;
-
 }
 .header__text{
    max-width: 500px;
+   padding-bottom: 10px;
 }
 main{
    background: linear-gradient(90deg, rgba(48, 86, 211, 0.08) 16.13%, rgba(48, 86, 211, 0) 86.29%);
@@ -100,13 +100,13 @@ main{
    font-weight: 600;
 }
 .content__button:hover, .content__button:active {
-   background-color: initial;
+    background-color: initial;
    color: #3056D3;
    transition: all 0.5s;
- }
- .content__button:active {
-   opacity: 0.5s;
- }  
+}
+.content__button:active{
+   opacity: 0.5;
+}
 .main__block{
    margin: 0 auto;
    font-weight: 700;
