@@ -3,6 +3,7 @@
 .wrapper{
    overflow: clip;
    min-height: 100%;
+   background: #212B36;
 }
 
 .header {
