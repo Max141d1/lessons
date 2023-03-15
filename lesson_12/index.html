@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://fonts.googleapis.com/css?family=Inter:500,600,&display=swap" rel="stylesheet " />
+   <link href="https://fonts.googleapis.com/css?family=Lobster:regular,&display=swap" rel="stylesheet" />
+   <link rel="stylesheet" href="css/style.css">
+   <title>Lesson 12</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header"></header>
+      <main class="main">
+         <div class="main__container">
+            <div class="main__transform">
+               <h2 class="main__title">translate (x,y)</h2>
+               <div class="main__block main__block_translate">
+                  transform
+               </div>
+               <div class="main__text">
+                  Зміщує елемент на нове місце,
+                  переміщаючи відносно початкового
+                  положення об'єкта вправо та вниз,
+                  використовуючи координати X та Y.
+               </div>
+            </div>
+            <div class="main__transform">
+               <h2 class="main__title">scale (x,y)</h2>
+               <div class="main__block main__block_scale">
+                  scale
+               </div>
+               <div class="main__text">
+                  Масштабує елементи,
+                  роблячи їх більшими або меншими.
+                  1 - це початковий розмір об'єкту
+               </div>
+            </div>
+            <div class="main__transform">
+               <h2 class="main__title">rotate (n + deg)</h2>
+               <div class="main__block main__block_rotate">
+                  rotate
+               </div>
+               <div class="main__text">
+                  Повертає елементи.
+               </div>
+            </div>
+            <div class="main__transform">
+               <h2 class="main__title">skew (x + deg, y + deg)</h2>
+               <div class="main__block main__block_skew">
+                  skew
+               </div>
+               <div class="main__text">
+                  Деформує (нахиляє) елементи.
+               </div>
+            </div>
+            <div class="main__transform">
+               <h2 class="main__title">matrix (a, c, b, d, x, y)</h2>
+               <div class="main__block main__block_matrix">
+                  matrix
+               </div>
+               <div class="main__text">
+                  Дозволяє об'єднати кілька функцій 2D-трансформацій в одній.
+               </div>
+            </div>
+            <h2 class="main__title">
+               Множинні 2D трансформації значення розділяються пробілом
+            </h2>
+            <div class="main__transform">
+               <div class="main__block main__block_multi">
+                  translate rotate scale
+               </div>
+            </div>
+            <div class="main__transform">
+               <h2 class="main__title">Transform-origin</h2>
+               <div class="main__block main__block_origin">
+                  origin
+               </div>
+               <div class="main__text">
+                  Дозволяє змістити центр трансформації,
+                  щодо якого відбувається зміна
+                  положення/розміру/форми елемента.
+                  transform-origin: 50% 50%;
+                  transform-origin: 50%;
+                  transform-origin: center;
+               </div>
+            </div>
+            <h2 class="main__title main__title_color ">3D-трансформацій</h2>
+            <div class="main__transform main__transform_3d">
+               <h2 class="main__title">Perspective, perspective-origin</h2>
+               <div class="main__block main__block_perspective">
+                  Perspective perspective-origin
+               </div>
+               <div class="main__text">
+                  Встановлення глибини та зміна
+                  точки початку координат.
+                  !! Задаються батьківському елементу!
+                  perspective-origin: center (за замевченням)
+                  perspective - не можна вказати у відсотках
+               </div>
+            </div>
+            <div class="main__transform main__transform_3d">
+               <h2 class="main__title">Translate 3D</h2>
+               <div class="main__text">
+                  За аналогією зі своїм 2D братом,
+                  це значення визначає переміщення елемента,
+                  але в 3D-просторі. Крім осі X та Y
+                  додається вісь Z.
+                  !! вісь Z працює лише з перспективою (perspective)
+               </div>
+               <div class="main__block main__block_translate3d">
+                  Translate 3D
+               </div>
+
+            </div>
+            <div class="main__transform">
+               <h2 class="main__title">Scale 3D (x,y)</h2>
+               <div class="main__block main__block_scale3d">
+                  Scale 3D
+               </div>
+            </div>
+            <div class="main__transform">
+               <h2 class="main__title">Rotate 3D</h2>
+               <div class="main__block main__block_rotate3d">
+                  Rotate 3D
+               </div>
+            </div>
+            <div class="main__transform main__transform_style">
+               <h2 class="main__title">Transform-style</h2>
+               <div class="main__block main__block_transform-style">
+                  Transform-style
+               </div>
+               <div class="main__text">
+                  Визначає, як дочірні елементи мають відображатися у 3D-просторі.
+                  !!! Задається батьківському елементу разом з perspective!
+                  transform-style: flat; - за замовченням
+               </div>
+            </div>
+            <div class="main__transform main__transform_style">
+               <h2 class="main__title">Transform-style</h2>
+               <div class="main__block main__block_transform-style">
+                  Transform-style
+               </div>
+               <div class="main__text">
+                  Визначає, як дочірні елементи мають відображатися у 3D-просторі.
+                  !!! Задається батьківському елементу разом з perspective!
+                  transform-style: flat; - за замовченням
+               </div>
+            </div>
+
+            <div class="main__section">
+               <h2 class="main__title">Backface-visibility</h2>
+               <div class="main__wrapper3d">
+                  <div class="flip">
+                     <div class="flip__body">
+                        <div class="flip__front">
+                           FONT
+                        </div>
+                        <div class="flip__back">
+                           BACK
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <p class="main__text">Відображення зворотнього боку об'єкта.</p>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br>
+            <div class="main__car car">
+               <div class="car__body-top">
+                  <div class="car__body-window car__body-window_front"></div>
+                  <div class="car__body-window car__body-window_back"></div>
+               </div>
+               <div class="car__text">juke</div>
+               <div class="car__body-front">
+                  <div class="car__wheels car__wheels_front"></div>
+                  <div class="car__wheels-main car__wheels-main_front"></div>
+               </div>
+               <div class="car__body-back">
+                  <div class="car__wheels car__wheels_back"></div>
+                  <div class="car__wheels-main car__wheels-main_back"></div>
+               </div>
+
+            </div>
+         </div>
+      </main>
+      <footer class="footer"></footer>
+   </div>
+</body>
+
+</html>

@@ -1,0 +1,274 @@
+/* Тут мало бути обнулення стилів, яке я тупо забув підключити 
+і не розумів якого **** все йде шкереберть */
+body {
+	font-family: "Inter", sans-serif;
+	color: #fff;
+   background: #212B36;
+}
+
+.wrapper{
+overflow: clip;
+min-height: 100%;
+height: 100%;
+}
+[class*="__container"]{
+   max-width: 1200px;
+   margin: 0 auto;
+   text-align: center;
+}
+[class*="__block"]:hover{
+ transition: all 0.5s;
+}
+.main__block{
+   width: 100px;
+   padding: 50px;
+   display: inline-block;
+   background: #443e3e;
+   margin-bottom: 20px;
+   cursor: pointer;
+   text-transform: uppercase;
+   text-align: center;
+}
+.main__title{
+  text-align: center;
+  font-size: 25px;
+}
+.main__title_color{
+   color: #9c8080;
+   margin: 100px 0;
+}
+.main__text{
+ margin-bottom: 100px;
+}
+/* .main__block_translate{
+   transform: translate(50%, 0);
+} */
+.main__block_translate:hover{
+   transform: translate(20px, 20px);
+}
+/* ================================== */
+.main__block_scale{
+   transform: scale(1);
+}
+.main__block_scale:hover{
+   transform: scale(-1, 1);
+   /* transform: scale(2); зум */
+}
+/* ================================== */
+/* .main__block_rotate:hover{
+   transition: all 0.5s;
+   transform: rotate(0deg); 
+} */
+.main__block_rotate:hover{
+   transform: rotate(360deg); 
+}
+/* ================================== */
+.main__block_skew{
+   transform: skew(0, 0);
+}
+.main__block_skew:hover{
+   transform: skew(10deg, 0)
+}
+/* ================================== */
+.main__block_matrix{
+   transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.main__block_matrix:hover{
+   transform: matrix(1, 0, 0, 2, 50, 0);
+}
+/* ============= Множинні 2D трансформації ===================== */
+.main__block_multi{
+   transform: translate(20px, 20px) rotate(45deg) scale(0.5);
+}
+/* ================================== */
+.main__block_origin{
+   transform: rotate(0deg);
+   transform-origin: 0 0;   /* 0 0 або top left  */
+   /* transform-origin: bottom center; */
+}
+.main__block_origin:hover{
+   transform: rotate(-30deg);
+   
+}
+/* =============== 3D-трансформації =================== */
+.main__transform_3d{
+   perspective: 400px;
+   /* perspective-origin: right top; */
+}
+.main__block_translate3d{
+   transform: translate3d(0,0,0);
+}
+.main__block_translate3d:hover{
+   transform: translate3d(20px,20px,150px);
+}
+/* ================================== */
+.main__block_scale3d{
+   transform: scale3d(1, 1, 1);
+}
+.main__block_scale3d:hover{
+   transform: scale3d(2, 2, 2);
+}
+/* ================================== */
+.main__block_rotate3d{
+   transform: rotate3d(1, 1, 1, 0deg);
+}
+.main__block_rotate3d:hover{
+   transform: rotate3d(2, 2, 2, 45deg);
+}
+/* ================================== */
+.main__transform_style{
+   background-color: rgba(255, 255, 255, 0.1);
+   perspective: 400px;
+   transform-style: preserve-3d;
+}
+.main__block_transform-style{
+   transform: rotateX(0deg);
+}
+.main__block_transform-style:hover{
+   transform: rotateX(45deg);
+}
+/* =============== Flip =================== */
+.main__section{
+   display: inline-block;
+    margin-left: 200px;
+}
+.main__section h2{
+   margin-left: -200px;
+}
+
+.flip {
+	perspective: 500px;
+	transform-style: preserve-3d;
+   
+}
+.flip__body {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	transition: all 0.8s ease 0s;
+	transform-style: preserve-3d;
+   
+}
+.flip__front,
+.flip__back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.flip__front {
+	z-index: 2;
+	transform: rotateY(0deg);
+	background-color: #77608d;
+
+	backface-visibility: hidden;
+}
+.flip__back {
+	transform: rotateY(-180deg);
+	background-color: rgba(121, 79, 69, 0.5);
+}
+.flip:hover .flip__body {
+	transform: rotateY(-180deg);
+}
+
+/* ================= car ================= */
+.car{
+   display: inline-block;
+   position: relative;
+   margin-bottom: 100px;
+}
+.car__body-top{
+   overflow: hidden;
+   text-align: center;
+   display: inline-block;
+   width: 400px;
+   height: 200px;
+   background: #77608d;
+   position: absolute;
+   top: -150px;
+   left: 50px;
+   border-radius: 66% 34% 100% 0% / 100% 90% 10% 0% ;
+}
+.car__body-window{
+   width: 180px;
+   height: 100px;
+   background: #212B36;
+   position: absolute;
+   top: 30px;
+   right: 20px;
+   border-radius: 46% 54% 99% 1% / 8% 99% 1% 92% ;
+   border-radius: 37% 63% 97% 3% / 10% 96% 4% 90%  ;
+}
+.car__body-window_back{
+   left: 70px;
+   width: 120px;
+   border-radius: 100% 0% 88% 12% / 41% 100% 0% 59% ;
+   border-radius: 100% 0% 83% 17% / 47% 100% 0% 53% ;
+}
+.car__body-front{
+   display: inline-block;
+   text-align: center;
+   width: 300px;
+   height: 150px;
+   background: #77608d;
+   border-radius: 100% 0% 100% 0% / 60% 100% 0;
+   border-bottom-left-radius: 10% 50%;
+   border-bottom-right-radius: 100% 0% 20% 80% / 0% 100% 0% 100%;
+   z-index: 3;
+}
+.car__body-back{
+   display: inline-block;
+   text-align: center;
+   width: 250px;
+   height: 150px;
+   background: #77608d;
+   border-radius: 100% 0% 100% 0% / 60% 100% 0;
+   border-bottom-left-radius: 10% 50%;
+   border-bottom-right-radius: 100% 0% 20% 80% / 0% 100% 0% 100%;
+   transform: scale(-1, 1) translateX(5px);
+   z-index: 3;
+}
+.car__text{
+   display: inline-block;
+   z-index: 20;
+   position: absolute;
+   top: 30px;
+   left: 250px;
+   font-size: 25px;
+   font-family: "Lobster";
+}
+
+.car__wheels_back{
+   position: absolute;
+   bottom: -40px;
+   right: 40px;
+}
+.car__wheels{
+   position: absolute;
+   bottom: -40px;
+   left: 40px;
+   display: inline-block;
+   width: 150px;
+   height: 150px;
+   background: #212B36;
+   border-radius: 50%;
+   z-index: 1;
+}
+.car__wheels-main{
+   z-index: 2;
+   position: absolute;
+   bottom: -30px;
+   left: 50px;
+   display: inline-block;
+   width: 50px;
+   height: 50px;
+   background: #212B36;
+   border-radius: 50%;
+   border: 40px solid  black;
+}
+
+/* ================================== */
