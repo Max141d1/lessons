@@ -67,7 +67,7 @@ body{
    margin-bottom: 60px;
 }
 .content__item {
-   max-width: 393px;
+   flex: 0 0 393px;
    position: relative;
    display: flex;
    flex-direction: column;
