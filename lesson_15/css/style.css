@@ -343,12 +343,12 @@ body{
 }
 .button {
 }
-.button__link {
+.button__link_white {
    background: #FFFFFF;
    color: #333333;
    transition: all 0.3s;
 }
-.button__link:hover{
+.button__link_white:hover{
    background: #333333;
    color: #fff;
    border: 1px solid #3C3C3C;
