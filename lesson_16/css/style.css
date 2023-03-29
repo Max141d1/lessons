@@ -160,7 +160,7 @@ body{
    border: 1px solid #E7E7E7;
    border-radius: 7px;
    transition: all 0.3s;
-   padding: 12px 0px 12px 22px;
+   padding: 12px;
    width: 67%;
 }
 .cupone__button {
