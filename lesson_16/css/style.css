@@ -155,7 +155,7 @@ body{
 }
 .cupone__input {
    margin-right: 20px;
-   margin-bottom: 5px;
+   margin-bottom: 10px;
    background: #FFFFFF;
    border: 1px solid #E7E7E7;
    border-radius: 7px;
@@ -235,7 +235,7 @@ body{
    margin-right: 5px; */
 }
 .login-form__input, .order-form__input {
-   padding: 10px 0px 10px 16px;
+   padding: 10px 16px;
    background: #FFFFFF;
    border: 1px solid #C4C4C4;
    flex: 0 0 74.422442%; /* 451/606 */
