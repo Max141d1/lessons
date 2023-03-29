@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Lesson 16</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__container"></div>
+      </header>
+      <main class="page">
+         <div class="page__e-commerce e-commerce">
+            <div class="e-commerce__container">
+               <h2 class="e-commerce__title">Billing Details</h2>
+               <div class="e-commerce__form-block">
+                  <form action="#" method="post" class="e-commerce__form form">
+                     <div class="form__line form__line_active">
+                        <input class="form__input form__input_active" type="text" required name="first-name"
+                           placeholder="First name*">
+                     </div>
+                     <div class="form__line">
+                        <input class="form__input" type="text" required name="last-name" placeholder="Last name*">
+                     </div>
+                     <div class="form__line">
+                        <input class="form__input" type="text" required name="address" placeholder="Address*">
+                     </div>
+                     <div class="form__line">
+                        <input class="form__input" type="text" name="address-2" placeholder="Address line 2">
+                     </div>
+                     <div class="form__line">
+                        <select class="form__list" name="select-list" required>
+                           <option value="1">Country*</option>
+                           <option value="2">Ukraine</option>
+                           <option value="3">Poland</option>
+                           <option value="4">Germany</option>
+                        </select>
+                     </div>
+                     <div class="form__line">
+                        <input class="form__input" type="text" required name="city" placeholder="City/Town*">
+                     </div>
+                     <div class="form__line">
+                        <input class="form__input" type="tel" required name="postcode" placeholder="Postcode / ZIP*">
+                     </div>
+                     <div class="form__line">
+                        <input class="form__input" type="tel" required name="phone" placeholder="Phone*">
+                     </div>
+                     <div class="form__line">
+                        <input class="form__input" type="tel" name="postcode" placeholder="Postcode / ZIP">
+                     </div>
+                     <div class="form__line">
+                        <input class="form__input" type="tel" name="phone" placeholder="Phone">
+                     </div>
+                     <div class="form__area area">
+                        <textarea class="area__block" name="massage" id="" cols="30" rows="10"
+                           placeholder="Additional information"></textarea>
+                     </div>
+                  </form>
+               </div>
+               <div class="e-commerce__checkbox checkbox">
+                  <div class="checkbox__block">
+                     <input id="cracc" class="checkbox__input" checked required name="create-account" type="checkbox">
+                     <label class="checkbox__lable" for="cracc">Create Account</label>
+                  </div>
+                  <div class="checkbox__block">
+                     <input id="daddress" class="checkbox__input" required name="different-address" type="checkbox">
+                     <label class="checkbox__lable" for="daddress">Ship to a different address?</label>
+                  </div>
+               </div>
+               <div class="e-commerce__cupone cupone">
+                  <h3 class="cupone__title">Apply Coupon to get discount!</h3>
+                  <div class="cupone__item">
+                     <input class="cupone__input" type="tel" name="coupon-code" placeholder="Coupon code">
+                     <button type="button" class="cupone__button">Apply Code</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+         <div class="page__crisp crisp">
+            <div class="crisp__container">
+               <div class="crisp__content">
+                  <div class="crisp__shipping-address shipping-address">
+                     <h3 class="crisp__title">Shipping Address</h3>
+                     <div class="crisp__login-block">
+                        <form class="crisp__login-form login-form" action="#" method="post">
+                           <div class="login-form__block">
+                              <div class="login-form__line">
+                                 <label class="login-form__label" for="email-01">Email Address*</label>
+                                 <input required class="login-form__input" id="email-01"
+                                    placeholder="roni_cost@example.com" name="user-mail" type="email">
+                              </div>
+                              <div class="login-form__line">
+                                 <label class="login-form__label" for="pass-01">Password</label>
+                                 <input required class="login-form__input" id="pass-01" placeholder="******************"
+                                    name="user-pass" type="password">
+                              </div>
+                              <div class="login-form__line">
+                                 <label class="login-form__label" for="code-01">Zip/Postal Code</label>
+                                 <input required class="login-form__input" id="code-01" name="user-code" type="tel">
+                              </div>
+                           </div>
+                           <div class="login-form__sign-in">
+                              <a href="#" class="login-form__link">
+                                 You already have an account with us. Sign in or continue as
+                                 guest.
+                              </a>
+                           </div>
+                           <button class="login-form__button">login</button>
+                           <div class="forgot-pass">
+                              <a href="#" class="login-form__link">Forgot Your Password?</a>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+
+                  <div class="crisp__oder-block oder-block">
+                     <form class="crisp__order-form order-form" action="#" method="post">
+                        <div class="order-form__line">
+                           <label class="order-form__label" for="first-name">First Name*</label>
+                           <input required class="order-form__input" id="first-name" name="first-name" type="text">
+                        </div>
+                        <div class="order-form__line">
+                           <label class="order-form__label" for="last-name">Last Name*</label>
+                           <input required class="order-form__input" id="last-name" name="last-name" type="text">
+                        </div>
+
+                        <div class="order-form__line">
+                           <label class="order-form__label" for="company">Company</label>
+                           <input class="order-form__input" id="company" name="company" type="text">
+                        </div>
+                        <div class="order-form__line">
+                           <label class="order-form__label" for="address-01">Street Address*</label>
+                           <input required class="order-form__input" id="address-01" name="address" type="text">
+                        </div>
+                        <div class="order-form__line">
+                           <label class="order-form__label order-form__label_hidden" for="address=02">Street
+                              Address*</label>
+                           <input class="order-form__input" id="address=02" name="address" type="text">
+                        </div>
+                        <div class="order-form__line">
+                           <label class="order-form__label order-form__label_hidden" for="address-03">Street
+                              Address*</label>
+                           <input class="order-form__input" id="address-03" name="address" type="text">
+                        </div>
+
+                        <div class="order-form__line">
+                           <label class="order-form__label" for="country">Country*</label>
+                           <input required class="order-form__input" id="country" name="country" type="text">
+                        </div>
+                        <div class="order-form__line">
+                           <label class="order-form__label" for="state">State/Province*</label>
+                           <select required class="order-form__list" id="state" name="region">
+                              <option value="1">Please select a region, state or province</option>
+                              <option value="2">Idaho</option>
+                              <option value="3">Alabama</option>
+                              <option value="4">Colorado</option>
+                           </select>
+                        </div>
+                        <div class="order-form__methods methods">
+                           <h3 class="methods__title">Shipping Methods</h3>
+                           <span class="methods__line"></span>
+                           <div class="methods__radio radio">
+                              <div class="radio__item items">
+                                 <div class="items__button">
+                                    <input checked class="items__input" id="first-choice" required autocomplete="off"
+                                       value="first" name="first-choice" type="radio">
+                                    <label class="items__label" for="first-choice">$5.00</label>
+                                 </div>
+                                 <div class="item__item item__item_marin">Fixed</div>
+                                 <div class="item__item">Flat Rate</div>
+                              </div>
+                              <span class="methods__line methods__line_radio"></span>
+                              <div class="radio__item items">
+                                 <div class="items__button">
+                                    <input checked class="items__input" id="second-choice" required autocomplete="off"
+                                       value="second" name="second-choice" type="radio">
+                                    <label class="items__label" for="second-choice">$10.00</label>
+                                 </div>
+                                 <div class="item__item item__item_marin">Table Rate</div>
+                                 <div class="item__item">Best Way</div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="order-form__footer footer-form">
+                           <button class="footer-form__button" type="button">next</button>
+                           <button class="footer-form__button-back" type="button">back</button>
+                        </div>
+                     </form>
+                  </div>
+
+
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="footer">
+         <div class="footer__container"></div>
+      </footer>
+   </div>
+</body>
+
+</html>
