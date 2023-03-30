@@ -269,7 +269,7 @@ body{
    background-color: #FFFFFF;
    border: 1px solid #000000;
 }
-.forgot-pass {
+.login-form__forgot-pass {
    display: inline-block;
    max-width: 149px;
 }
