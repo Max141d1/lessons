@@ -29,7 +29,7 @@ body{
 /* =========================================== */
 .page__dananz {
 }
-.minimalist{
+.minimalist:not(:last-child){
    margin: 20px 0px 100px 0px;
 }
 .achievement{}
@@ -254,6 +254,12 @@ body{
    }
 }
 @media (max-width: 840.98px) {
+    .minimalist:not(:last-child){
+      margin-bottom: 20px;
+   }
+   .header-achievement:not(:last-child) {
+      margin-bottom: 20px;
+  }
    .top-block:not(:last-child) {
       margin-bottom: 20px;
    }
@@ -300,9 +306,9 @@ body{
 .achievement__header {
    display: flex;
 }
-.header-achievement {
-   margin-bottom: 40px;
-}
+ .header-achievement:not(:last-child) {
+      margin-bottom: 20px;
+  }
 .header-achievement__link{}
 .header-achievement__title {
    position: relative;
