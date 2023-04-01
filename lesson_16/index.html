@@ -19,64 +19,68 @@
                <h2 class="e-commerce__title">Billing Details</h2>
                <div class="e-commerce__form-block">
                   <form action="#" method="post" class="e-commerce__form form">
-                     <div class="form__line form__line_active">
-                        <input class="form__input form__input_active" type="text" required name="first-name"
-                           placeholder="First name*">
+                     <div class="form__column">
+                        <div class="form__line form__line_active">
+                           <input class="form__input form__input_active" type="text" required name="first-name"
+                              placeholder="First name*">
+                        </div>
+                        <div class="form__line">
+                           <input class="form__input" type="text" required name="last-name" placeholder="Last name*">
+                        </div>
+                        <div class="form__line">
+                           <input class="form__input" type="text" required name="address" placeholder="Address*">
+                        </div>
+                        <div class="form__line">
+                           <input class="form__input" type="text" name="address-2" placeholder="Address line 2">
+                        </div>
+                        <div class="form__line">
+                           <select class="form__list" name="select-list" required>
+                              <option value="">Country*</option>
+                              <option value="1">Ukraine</option>
+                              <option value="2">Poland</option>
+                              <option value="3">Germany</option>
+                           </select>
+                        </div>
+                        <div class="form__line">
+                           <input class="form__input" type="text" required name="city" placeholder="City/Town*">
+                        </div>
+                        <div class="form__line">
+                           <input class="form__input" type="tel" required name="postcode" placeholder="Postcode / ZIP*">
+                        </div>
+                        <div class="form__line">
+                           <input class="form__input" type="tel" required name="phone" placeholder="Phone*">
+                        </div>
+                        <div class="form__line">
+                           <input class="form__input" type="tel" name="postcode" placeholder="Postcode / ZIP">
+                        </div>
+                        <div class="form__line">
+                           <input class="form__input" type="tel" name="phone" placeholder="Phone">
+                        </div>
+                        <div class="form__area area">
+                           <textarea class="area__block" name="massage" cols="30" rows="10"
+                              placeholder="Additional information"></textarea>
+                        </div>
                      </div>
-                     <div class="form__line">
-                        <input class="form__input" type="text" required name="last-name" placeholder="Last name*">
+                     <div class="e-commerce__checkbox checkbox">
+                        <div class="checkbox__block">
+                           <input id="cracc" class="checkbox__input" checked required name="create-account"
+                              type="checkbox">
+                           <label class="checkbox__lable" for="cracc">Create Account</label>
+                        </div>
+                        <div class="checkbox__block">
+                           <input id="daddress" class="checkbox__input" required name="different-address"
+                              type="checkbox">
+                           <label class="checkbox__lable" for="daddress">Ship to a different address?</label>
+                        </div>
                      </div>
-                     <div class="form__line">
-                        <input class="form__input" type="text" required name="address" placeholder="Address*">
-                     </div>
-                     <div class="form__line">
-                        <input class="form__input" type="text" name="address-2" placeholder="Address line 2">
-                     </div>
-                     <div class="form__line">
-                        <select class="form__list" name="select-list" required>
-                           <option value="">Country*</option>
-                           <option value="1">Ukraine</option>
-                           <option value="2">Poland</option>
-                           <option value="3">Germany</option>
-                        </select>
-                     </div>
-                     <div class="form__line">
-                        <input class="form__input" type="text" required name="city" placeholder="City/Town*">
-                     </div>
-                     <div class="form__line">
-                        <input class="form__input" type="tel" required name="postcode" placeholder="Postcode / ZIP*">
-                     </div>
-                     <div class="form__line">
-                        <input class="form__input" type="tel" required name="phone" placeholder="Phone*">
-                     </div>
-                     <div class="form__line">
-                        <input class="form__input" type="tel" name="postcode" placeholder="Postcode / ZIP">
-                     </div>
-                     <div class="form__line">
-                        <input class="form__input" type="tel" name="phone" placeholder="Phone">
-                     </div>
-                     <div class="form__area area">
-                        <textarea class="area__block" name="massage"  cols="30" rows="10"
-                           placeholder="Additional information"></textarea>
+                     <div class="e-commerce__cupone cupone">
+                        <h3 class="cupone__title">Apply Coupon to get discount!</h3>
+                        <div class="cupone__item">
+                           <input class="cupone__input" type="tel" name="coupon-code" placeholder="Coupon code">
+                           <button type="button" class="cupone__button">Apply Code</button>
+                        </div>
                      </div>
                   </form>
-               </div>
-               <div class="e-commerce__checkbox checkbox">
-                  <div class="checkbox__block">
-                     <input id="cracc" class="checkbox__input" checked required name="create-account" type="checkbox">
-                     <label class="checkbox__lable" for="cracc">Create Account</label>
-                  </div>
-                  <div class="checkbox__block">
-                     <input id="daddress" class="checkbox__input" required name="different-address" type="checkbox">
-                     <label class="checkbox__lable" for="daddress">Ship to a different address?</label>
-                  </div>
-               </div>
-               <div class="e-commerce__cupone cupone">
-                  <h3 class="cupone__title">Apply Coupon to get discount!</h3>
-                  <div class="cupone__item">
-                     <input class="cupone__input" type="tel" name="coupon-code" placeholder="Coupon code">
-                     <button type="button" class="cupone__button">Apply Code</button>
-                  </div>
                </div>
             </div>
          </div>
@@ -110,7 +114,7 @@
                               </a>
                            </div>
                            <button class="login-form__button">login</button>
-                           <div class="login-form__forgot-pass">
+                           <div class="forgot-pass">
                               <a href="#" class="login-form__link">Forgot Your Password?</a>
                            </div>
                         </form>
@@ -165,8 +169,8 @@
                            <div class="methods__radio radio">
                               <div class="radio__item items">
                                  <div class="items__button">
-                                    <input checked class="items__input" id="first-choice"
-                                       value="first" name="method" type="radio">
+                                    <input checked class="items__input" id="first-choice" value="first" name="method"
+                                       type="radio">
                                     <label class="items__label" for="first-choice">$5.00</label>
                                  </div>
                                  <div class="item__item item__item_marin">Fixed</div>
@@ -175,8 +179,8 @@
                               <span class="methods__line methods__line_radio"></span>
                               <div class="radio__item items">
                                  <div class="items__button">
-                                    <input class="items__input" id="second-choice"
-                                       value="second" name="method" type="radio">
+                                    <input class="items__input" id="second-choice" value="second" name="method"
+                                       type="radio">
                                     <label class="items__label" for="second-choice">$10.00</label>
                                  </div>
                                  <div class="item__item item__item_marin">Table Rate</div>
@@ -185,7 +189,7 @@
                            </div>
                         </div>
                         <div class="order-form__footer footer-form">
-                           <button class="footer-form__button" type="button">next</button>
+                           <button class="footer-form__button" type="submit">next</button>
                            <button class="footer-form__button-back" type="button">back</button>
                         </div>
                      </form>
