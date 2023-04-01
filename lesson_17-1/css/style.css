@@ -53,13 +53,17 @@ body{
 /* ========================================= */
 
 .form {
+   
+}
+.form__column{
    display: flex;
    flex-wrap: wrap;
    row-gap: 30px;
    column-gap: 28px;
 }
-
-
+.form__column:not(:last-child){
+   margin-bottom: 35px;
+}
 .form__line {
    flex: 0 1 336px;
 }
@@ -114,9 +118,7 @@ body{
    padding: 25px;
    resize: vertical;
 }
-.area__block:not(:last-child){
-   margin-bottom: 5px;
-}
+
 .area__block:hover{
    border: 1px solid #3056D3;
 }
