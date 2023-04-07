@@ -193,6 +193,7 @@ body{
   .main__autor:not(:last-child) {
    margin-bottom: 5px;
    }
+ } 
    @media (max-width: 648.98px) {
       .main:not(:last-child) {
          margin-bottom: 10px;
@@ -203,9 +204,7 @@ body{
       min-height: 200px;   
   }
  }
- @media (max-width: 478.98px) {
-   
- }
+
 /* ================================ */
 .galery{
    margin-bottom: 100px;
@@ -358,7 +357,6 @@ body{
       font-size: 18px;
       text-align: center;
    }
-
 }
 /* -------------------------------------------------------------*/
 @media (any-hover: hover){
@@ -368,5 +366,4 @@ body{
    .item-galery__title:hover{
       color: #CCD5AE;
       }
-}
-/* =========================================================== */
+} 
