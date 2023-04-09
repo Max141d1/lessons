@@ -1,0 +1,138 @@
+@import url(reset.css);
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap);
+/* &display=swap --------- для шрифту*/
+body{
+    
+}
+.wrapper{
+   overflow: clip;
+   min-height: 100%;
+   display: flex;
+	flex-direction: column;
+   
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+
+[class*="__container"]{
+   max-width: 1230px;
+   margin: 0 auto;
+   padding: 0px 15px;
+}
+
+.page__minimalistic-room {}
+
+.minimalistic-room {
+   font-family: 'Poppins', sans-serif;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 1.6;
+   color: #9C9C9C;
+}
+
+.minimalistic-room__content {
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   gap: 32px;
+   margin-top: 50px;
+}
+.minimalistic-room__content:not(:last-child){
+   margin-bottom: 81px;
+}
+.minimalistic-room__topic {
+}
+.minimalistic-room__title {
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 1.4;
+   color: #333333;
+}
+.minimalistic-room__title:not(:last-child){
+   margin-bottom: 24px;
+}
+.minimalistic-room__text {
+}
+
+.minimalistic-room__text_overview:not(:last-child){
+   margin-bottom: 60px;
+}
+.minimalistic-room__text_process p:not(:last-child){
+   margin-bottom: 30px;
+}
+.minimalistic-room__footer {
+}
+.footer {
+}
+.footer div{
+   display: inline-block;
+}
+.footer__date{
+   margin-right: 81px;
+}
+.footer__date:not(:last-child){
+   margin-bottom: 5px;
+}
+.footer .footer__text{
+   
+}
+.footer__text {
+}
+
+@media (max-width: 991.98px) {
+   .minimalistic-room__content:not(:last-child) {
+      margin-bottom: 40px;
+   }
+}
+@media (max-width: 773.98px) {
+   .minimalistic-room__title:not(:last-child) {
+      margin-bottom: 15px;
+   }
+  .minimalistic-room__content:not(:last-child) {
+      margin-bottom: 25px;
+   }
+   .minimalistic-room__text_process p:not(:last-child) {
+      margin-bottom: 15px;
+   }
+}
+@media (max-width: 724.98px) {
+   .minimalistic-room__content {
+      grid-template-columns: repeat(1,1fr); 
+   }
+  .minimalistic-room__topic h2 {
+   text-align: center;
+   }
+   .minimalistic-room__text_overview:not(:last-child) {
+      margin-bottom: 25px;
+   }
+}
+/* -------------------------------------------------- */
+.minimalistic-room__items {
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   grid-template-rows: repeat(3,1fr);
+   gap: 2.666667%; 
+}
+.minimalistic-room__item {
+}
+.minimalistic-room__item:nth-child(3){
+   grid-column: span 2;
+}
+.minimalistic-room__item a{
+   display: inline-block;
+}
+.minimalistic-room__item img{
+   max-width: 100%;
+}
+/* -------------------------------------------------- */
+@media (max-width: 650.98px) {
+   .minimalistic-room__items {
+      grid-template-columns: repeat(1,1fr);
+      grid-template-rows: auto;
+      gap: 10px;
+      justify-items: center;
+  }
+  .minimalistic-room__item:nth-child(3){
+      grid-column: span 1;
+   }
+}
