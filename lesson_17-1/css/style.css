@@ -124,10 +124,10 @@ body{
 }
 
 /* ========================================= */
-.checkbox{
+.e-commerce__checkbox{
   max-width: 280px;
 }
-.checkbox:not(:last-child){
+.e-commerce__checkbox:not(:last-child){
    margin-bottom: 55px;
 }
 .checkbox__block{}
@@ -202,6 +202,18 @@ body{
    }
 }
 @media (max-width: 729.98px) {
+   .form__column{
+      flex-direction: column;
+   }
+   .form__line {
+      flex: 0 1 100%;
+  }
+  .form__area {
+      flex: 0 1 100%;
+   }
+   .cupone {
+      max-width: 100%;
+  }
    .e-commerce__form-block:not(:last-child){
       margin-bottom: 15px;
    }
@@ -339,6 +351,11 @@ body{
   }
   .login-form__sign-in:not(:last-child) {
    margin-bottom: 20px;
+   }
+}
+@media (max-width: 729.98px) {
+   .login-form__input{
+      padding: 10px 5px;
    }
 }
 @media (max-width: 655.98px) {
