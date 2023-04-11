@@ -740,6 +740,7 @@ body{
    color: #3056D3;
 }
 .latest-collection__text {
+   transition: all 0.3s;
 }
 /* --------------------Media------------------------------------------------- */
 @media (max-width: 946.98px) {
@@ -765,6 +766,9 @@ body{
    }
    .latest-collection__image-link img:hover{
       transform: scale(1.05);
+   }
+   .latest-collection__text:hover{
+      text-decoration: underline;
    }
 }
 /* ------------------------------------------------------------------------ */
