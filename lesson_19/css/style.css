@@ -526,16 +526,21 @@ body{
    display: grid;
    grid-template-columns: repeat(3,1fr);
    grid-template-rows: repeat(2,1fr);
+   border: 1px solid #E7E7E7;
+   border-radius: 10px;
+   border-bottom: none;
+   border-right: none;
+   overflow: hidden;
 }
 .items-tranding-product {
 }
-.tranding-product__items{
-
-}
 .tranding-product__shell{
    padding: 25px 25px 40px 25px;
-   border: 1px solid #E7E7E7;
-   border-radius: 10px;
+   border-right: 1px solid #E7E7E7;
+   border-bottom: 1px solid #E7E7E7;
+}
+.tranding-product__shell:last-child{
+   border-bottom-right-radius: 10px
 }
 .tranding-product__item {
    display: flex;
@@ -863,19 +868,13 @@ body{
 .featured-products__item:nth-child(1){
    grid-column: span 2;
 }
-.featured-products__item:nth-child(3n){
-   grid-row: 2 / 3;
-   grid-column: 2 / span 2;
+.featured-products__item:nth-child(4n){
+   grid-column: 2 / span 2; 
 }
 .featured-products__item:nth-child(5n){
    grid-column: span 2;
 }
-/* .featured-products__item:nth-child(7n){
-   grid-column:  span 1;
-}
-.featured-products__item:nth-child(8n){
-   grid-column:  span 2;
-} */
+
 .featured-products__wrapper {
    position: relative;
    padding-bottom: 52.245509%;
@@ -931,7 +930,9 @@ body{
    border-radius: 4px;
    width: 36px;
    height: 36px;  
+   transition: all 0.3s ease;
 }
+
 .wrapper-featured-products__icon_basket {
    position: relative;
 }
@@ -980,6 +981,9 @@ body{
    }
    .featured-products__wrapper:hover .wrapper-featured-products__item{
       bottom: 30px;
+   }
+   .wrapper-featured-products__icon:hover{
+      background: #afaeae;
    }
 }
 /* ---------------------------------------------------------------------------------------------- */
