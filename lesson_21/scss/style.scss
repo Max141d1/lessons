@@ -1,0 +1,291 @@
+@use "sass:math";
+
+@import "_mixins.scss";
+@import "_reset.scss";
+@import "_common.scss";
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,500,700&display=swap);
+// &display=swap --------- для шрифту
+body{
+   font-family: 'Poppins';
+   font-weight: 300;
+   font-size: rem (12);
+   line-height: 1.67;
+   color: #495057;
+}
+.wrapper{
+   overflow: clip;
+   min-height: 100%;
+   display: flex;
+	flex-direction: column;  
+   background: rgb(69, 64, 64);
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+[class*="__container"]{ 
+   max-width: 1270px;
+   padding: 0 15px;
+   margin: 0  auto;
+}
+
+.header {
+   position: fixed;
+   width: 100%;
+   top: 0;
+   left: 0;
+   z-index: 50;
+   color: rgba(248, 249, 250, 0.5);
+   font-weight: 500;
+   line-height: 2.08;
+   &__container {
+   }
+
+   &__block {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: rem(36) 0;
+   }
+
+   &__logo {
+      padding-right: 10px;
+      text-transform: uppercase;
+      color: #F8F9FA;
+      font-weight: 700;
+      font-size: 1.125rem;
+      line-height: 1.39;
+      &::after{
+         content: ".";
+         color:  #DDBEA9;
+      }
+   }
+
+   &__right-side {
+      display: flex;
+      column-gap: 25px;
+      align-items: center;
+   }
+
+   &__menu {
+   }
+
+   &__search {
+      width: 0.75rem;
+      height: 0.75rem;
+      position: relative;
+      padding-left: rem(25);
+      padding-right: 5px;
+      transition: transform 0.3s;
+      &::before{
+         content: "";
+         border: 1px solid rgba(229, 229, 229, 0.5);
+         position: absolute;
+         top: -5px;
+         left: 0;
+         width: 0;
+         height: rem(25);
+      }
+      & a{
+         & img{
+            @media (any-hover:hover) {
+               &:hover{
+                  transform: scale(1.05);
+               }
+            }           
+         }
+      }
+   }
+}
+
+
+.menu-header {
+
+   &__list {
+      display: flex;
+      column-gap: 25px;
+      row-gap: 5px;
+      flex-wrap: wrap;
+   }  
+   &__item {
+      transition: color 0.3s;
+      position: relative;
+      &_active {
+         color: #F8F9FA;
+      }   
+      &_arrow {
+         position: relative;
+         padding-right: 13px;
+         &::before{
+            content: "";
+            position: absolute;
+            top: 11px;
+            right: 0;
+            background: url(../img/icon/arrov.svg) 0 0 / 100% no-repeat;
+            width: 8px;
+            height: 5px;
+         }
+         @media (any-hover:hover) {
+            &:hover .sub-menu{
+               visibility: visible;
+               opacity: 1;
+               pointer-events: all;
+            }
+         }
+       
+      }
+      @media (any-hover:hover) {
+      &:hover{
+         color: #F8F9FA;
+      }
+   }
+   }
+   @media (any-hover:hover) {
+      &__item:hover &__link::after{
+         opacity: 1;
+         visibility: visible;
+         width: 100%;
+         left: 0;
+   }
+   }
+
+   &__link {
+      position: relative;
+      display: inline-block;
+      &::after{
+         content: "";
+         display: inline-block;
+         position: absolute;
+         bottom: 0;
+         left: 50%;
+         width: 0;
+         height: 2px;
+         border: 2px solid #DDBEA9;
+         border-radius: 2px;
+         opacity: 0;
+         visibility: hidden;
+         transition: all 0.3s;
+      }
+      &_active {
+         &::after{
+            opacity: 1;
+            visibility: visible;
+            width: 100%;
+            left: 0;
+         }
+
+      }
+   }
+}
+
+.sub-menu {
+   position: absolute;
+      top: 100%;
+      left: -35%;
+      padding-top: rem(20);
+      visibility: hidden;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.3s;
+   &__list {
+      background: #212529;
+      border-radius: 5px;
+      padding: rem(20);
+      min-width: 136px;
+   }
+
+   &__item {
+      color: rgba(248, 249, 250, 0.6);
+      transition: color 0.3s;
+      @media (any-hover:hover) {
+         &:hover{
+            color: #F8F9FA;
+         }
+      }
+      &:not(:last-child){
+         margin-bottom: 10px;
+      }
+      &_active {
+         color: #F8F9FA;
+      }
+   }
+
+   &__link {
+
+      &_active {
+      }
+   }
+}
+
+
+
+.page {
+
+   &__vence {
+   }
+}
+.vence {
+
+   &__main {
+   }
+}
+
+.main {
+   min-height: 100vh;
+   position: relative;
+   color: #E5E5E5;
+   display: flex;
+   align-items: flex-end;
+   padding-bottom: 100px;
+   padding-top: 120px;
+   &__container {
+      z-index: 2;
+      flex: 1 1 auto;
+   }
+
+   &__content {
+      position: relative;
+      z-index: 2;
+   }
+
+
+   &__date {
+      &:not(:last-child){
+         margin-bottom: 15px;
+      }
+   }
+
+   &__title {
+      font-weight: 700;
+      font-size: rem(25);
+      line-height: 1.6;
+      color: #F8F9FA;
+      max-width: 605px;
+      &:not(:last-child){
+         margin-bottom: 15px;
+      }
+   }
+
+   &__text {
+      max-width: 500px;
+   }
+
+   &__nav {
+   }
+
+   &__background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      & img{
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+}
+
