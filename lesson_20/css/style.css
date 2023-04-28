@@ -731,12 +731,23 @@ body {
     font-size: 24px;
   }
 }
+@media (max-width: 767.98px) {
+  .info__title {
+    border: none;
+  }
+}
 .info__text {
   font-family: "Roboto Light";
   max-width: 600px;
   font-size: 25px;
   line-height: 1.48;
   letter-spacing: 0.01em;
+}
+.info__text p:nth-child(2) {
+  display: none;
+}
+.info__text p:nth-child(1) {
+  display: none;
 }
 .info__text:not(:last-child) {
   margin-bottom: 24px;
@@ -745,6 +756,16 @@ body {
   .info__text {
     font-size: 18px;
     max-width: 400px;
+  }
+}
+@media (min-width: 767.98px) {
+  .info__text p:nth-child(1) {
+    display: inline-block;
+  }
+}
+@media (max-width: 767.98px) {
+  .info__text p:nth-child(2) {
+    display: inline-block;
   }
 }
 .info__button {

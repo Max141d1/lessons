@@ -684,6 +684,9 @@ body{
       @media (max-width: 982.98px) {
          font-size: 24px;
       }
+      @media (max-width: 767.98px) {
+         border: none;
+      }
    }
 
    &__text {
@@ -692,12 +695,28 @@ body{
       font-size: 25px;
       line-height: 1.48;
       letter-spacing: 0.01em;
+      & p:nth-child(2){
+         display: none;
+      }
+      & p:nth-child(1){
+         display: none;
+      }
       &:not(:last-child){
          margin-bottom: 24px;
       }
       @media (max-width: 982.98px) {
          font-size: 18px;
          max-width: 400px;
+      }
+      @media (min-width: 767.98px) {
+         & p:nth-child(1){
+            display: inline-block;
+         }
+      }
+      @media (max-width: 767.98px) {
+         & p:nth-child(2){
+            display: inline-block;
+         }
       }
    }
 
