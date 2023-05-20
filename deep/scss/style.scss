@@ -91,9 +91,13 @@ body{
    &__container {
       display: flex;
       min-height: 100vh;
+      @media (max-width: rem(991.98)) {
+         min-height: 100%;
+      }
       @media (max-width: rem(767.98)) {
        flex-direction: column;  
       }
+      
    }
 
    &__body {

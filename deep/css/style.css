@@ -212,6 +212,11 @@ body {
   display: flex;
   min-height: 100vh;
 }
+@media (max-width: 61.99875rem) {
+  .main__container {
+    min-height: 100%;
+  }
+}
 @media (max-width: 47.99875rem) {
   .main__container {
     -webkit-box-orient: vertical;
