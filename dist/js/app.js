@@ -155,10 +155,16 @@
             }));
         }));
     }
-    const functions_element = document.querySelector(".menu-footer__arrow");
-    functions_element.addEventListener("click", (() => {
-        functions_element.classList.toggle("arrow-active");
-    }));
+    function toggleArrowActiveClass() {
+        const titles = document.querySelectorAll(".menu-footer__title");
+        titles.forEach((function(title) {
+            title.addEventListener("click", (function() {
+                const arrow = this.querySelector(".menu-footer__arrow");
+                arrow.classList.toggle("arrow-active");
+            }));
+        }));
+    }
+    toggleArrowActiveClass();
     class MousePRLX {
         constructor(props, data = null) {
             let defaultConfig = {
