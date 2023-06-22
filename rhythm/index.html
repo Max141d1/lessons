@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230621191906">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230622192340">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,16 +14,16 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header id="header" class="header">
 			<div class="header__container">
-				<a href="#" class="header__logo"><img src="img/logo.svg" alt="Logo"></a>
+				<a href="" class="header__logo"><img src="img/logo.svg" alt="Logo"></a>
 				<div class="header__menu menu">
 					<button type="button" class="menu__icon icon-menu"><span></span></button>
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="" class="menu__link">Store</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Collections</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Support</a></li>
+							<li class="menu__item"><a href="#store" class="menu__link">Store</a></li>
+							<li class="menu__item"><a href="#collections" class="menu__link">Collections</a></li>
+							<li class="menu__item"><a href="#support" class="menu__link">Support</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -51,7 +51,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__store store">
+			<section id="store" class="page__store store">
 				<div class="store__container">
 					<h2 class="store__title title">Check out the <span>Store</span></h2>
 					<div class="store__content content-store">
@@ -128,7 +128,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__categories categories">
+			<section id="collections" class="page__categories categories">
 				<div class="categories__container">
 					<h2 class="categories__title title">Choose based on <span>Categories</span></h2>
 					<div class="categories__items">
@@ -206,7 +206,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__about about">
+			<section id="support" class="page__about about">
 				<div class="about__container">
 					<h2 class="about__title  title title-white">Why try <span>Rhythm?</span></h2>
 					<div class="about__items">
@@ -243,9 +243,96 @@
 			<section class="page__customers customers">
 				<div class="customers__container">
 					<h2 class="customers__title title">What our <span>customer’s</span> say</h2>
-					<div class="customers__media">
-						<div class="customers__image">
-							<picture><source srcset="img/customer’s/ava.webp" type="image/webp"><img src="img/customer’s/ava.jpg" alt="Avatar"></picture>
+					<div class="customers__slider swiper">
+						<div class="customers__wrapper swiper-wrapper">
+							<div class="customers__slide swiper-slide">
+								<div class="swiper-slide__media">
+									<div class="swiper-slide__image">
+										<picture><source srcset="img/customers/ava.webp" type="image/webp"><img src="img/customers/ava.jpg" alt="Avatar"></picture>
+									</div>
+								</div>
+								<div class="swiper-slide__content">
+									<div class="swiper-slide__text">
+										<p>“The Quality and Delivery is always on time, being a professional guitarist myself I
+											love the customer service the brand provides, highly recommend Rhythm anytime.”</p>
+									</div>
+									<div class="swiper-slide__autor">Ryan Wels</div>
+									<div class="swiper-slide__label">prOFESSIONAL GUITARIST</div>
+								</div>
+							</div>
+							<div class="customers__slide swiper-slide">
+								<div class="swiper-slide__media">
+									<div class="swiper-slide__image">
+										<picture><source srcset="img/customers/ava.webp" type="image/webp"><img src="img/customers/ava.jpg" alt="Avatar"></picture>
+									</div>
+								</div>
+								<div class="swiper-slide__content">
+									<div class="swiper-slide__text">
+										<p>“The Quality and Delivery is always on time, being a professional guitarist myself I
+											love the customer service the brand provides, highly recommend Rhythm anytime.”</p>
+									</div>
+									<div class="swiper-slide__autor">Ryan Wels</div>
+									<div class="swiper-slide__label">prOFESSIONAL GUITARIST</div>
+								</div>
+							</div>
+							<div class="customers__slide swiper-slide">
+								<div class="swiper-slide__media">
+									<div class="swiper-slide__image">
+										<picture><source srcset="img/customers/ava.webp" type="image/webp"><img src="img/customers/ava.jpg" alt="Avatar"></picture>
+									</div>
+								</div>
+								<div class="swiper-slide__content">
+									<div class="swiper-slide__text">
+										<p>“The Quality and Delivery is always on time, being a professional guitarist myself I
+											love the customer service the brand provides, highly recommend Rhythm anytime.”</p>
+									</div>
+									<div class="swiper-slide__autor">Ryan Wels</div>
+									<div class="swiper-slide__label">prOFESSIONAL GUITARIST</div>
+								</div>
+							</div>
+							<div class="customers__slide swiper-slide">
+								<div class="swiper-slide__media">
+									<div class="swiper-slide__image">
+										<picture><source srcset="img/customers/ava.webp" type="image/webp"><img src="img/customers/ava.jpg" alt="Avatar"></picture>
+									</div>
+								</div>
+								<div class="swiper-slide__content">
+									<div class="swiper-slide__text">
+										<p>“The Quality and Delivery is always on time, being a professional guitarist myself I
+											love the customer service the brand provides, highly recommend Rhythm anytime.”</p>
+									</div>
+									<div class="swiper-slide__autor">Ryan Wels</div>
+									<div class="swiper-slide__label">prOFESSIONAL GUITARIST</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</section>
+			<section class="page__product product">
+				<div class="product__container">
+					<div class="product__content content-product">
+						<h2 class="content-product__title title title-star">Browse and buy your <span>favorite guitars</span>
+							with Rhythm.
+						</h2>
+						<div class="content-product__mobile-app">
+							<a href="#" class="content-product__item">
+								<img src="img/product/google-play.svg" alt="Google Play">
+							</a>
+							<a href="#" class="content-product__item">
+								<img src="img/product/apple-store.svg" alt="Apple Store">
+							</a>
+						</div>
+					</div>
+					<div class="product__media media-product">
+						<div class="media-product__items">
+							<div class="media-product__item">
+								<picture><source srcset="img/product/card-01.webp" type="image/webp"><img src="img/product/card-01.jpg" alt="Card"></picture>
+							</div>
+							<div class="media-product__item">
+								<picture><source srcset="img/product/card-02.webp" type="image/webp"><img src="img/product/card-02.jpg" alt="Card"></picture>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -253,10 +340,76 @@
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
+				<div class="footer__block">
+					<div class="footer__content">
+						<div class="footer__info info-footer">
+							<a href="#" class="info-footer__logo logo-footer">
+								<img class="logo-footer__icon" src="img/icon-logo.svg" alt="Logo">
+								<div class="logo-footer__text">Rhythm</div>
+							</a>
+							<div class="info-footer__contacts">
+								<a href="#" class="info-footer__email _icon-email">
+									Enquiry@Rhythm.com
+								</a>
+								<a href="#" class="info-footer__location _icon-location">
+									San Francisco
+								</a>
+							</div>
+						</div>
+						<div class="footer__navigation">
+							<nav class="footer__menu menu-footer">
+								<div class="menu-footer__items">
+									<button type="button" class="menu-footer__title">Pages<span class="menu-footer__arrow ">
+										</span>
+									</button>
+									<ul class="menu-footer__list">
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Store</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Collections</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Support</a>
+										</li>
+									</ul>
+								</div>
+							</nav>
+							<nav class="footer__menu menu-footer">
+								<div class="menu-footer__items">
+									<button type="button" class="menu-footer__title">Product<span class="menu-footer__arrow ">
+										</span>
+									</button>
+									<ul class="menu-footer__list">
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Terms</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Privacy Policy</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="#" class="menu-footer__link">Copyright</a>
+										</li>
+									</ul>
+								</div>
+							</nav>
+						</div>
+						<div class="footer__social social-footer">
+							<h3 class="social-footer__title">Follow us</h3>
+							<div class="social-footer__items">
+								<a href="#" class="social-footer__item _icon-fb"></a>
+								<a href="#" class="social-footer__item _icon-tw"></a>
+								<a href="#" class="social-footer__item _icon-ins"></a>
+							</div>
+						</div>
+					</div>
+					<div class="footer__copyright"><a href="#">© 2022 Copyright.Rhythm</a></div>
+				</div>
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230621191906"></script>
+	<script src="js/app.min.js?_v=20230622192340"></script>
 </body>
+sw
 
 </html>
