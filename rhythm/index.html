@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230622192340">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230624150508">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,14 +16,16 @@
 	<div class="wrapper">
 		<header id="header" class="header">
 			<div class="header__container">
-				<a href="" class="header__logo"><img src="img/logo.svg" alt="Logo"></a>
+				<a href="" data-goto="main" class="header__logo"><img src="img/logo.svg" alt="Logo"></a>
 				<div class="header__menu menu">
 					<button type="button" class="menu__icon icon-menu"><span></span></button>
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="#store" class="menu__link">Store</a></li>
-							<li class="menu__item"><a href="#collections" class="menu__link">Collections</a></li>
-							<li class="menu__item"><a href="#support" class="menu__link">Support</a></li>
+							<li class="menu__item"><a href="#store" data-goto-header data-goto="#store" class="menu__link">Store</a>
+							</li>
+							<li class="menu__item"><a href="#collections" data-goto-header data-goto="#collections" class="menu__link">Collections</a>
+							</li>
+							<li class="menu__item"><a href="#reviews" data-goto-header data-goto="#reviews" class="menu__link">Reviews</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -206,35 +208,35 @@
 					</div>
 				</div>
 			</section>
-			<section id="support" class="page__about about">
-				<div class="about__container">
-					<h2 class="about__title  title title-white">Why try <span>Rhythm?</span></h2>
-					<div class="about__items">
-						<article class="about__item item-about">
-							<div class="item-about__icon">
-								<img src="img/about/01.svg" alt="Icon">
+			<section id="reviews" class="page__reviews reviews">
+				<div class="reviews__container">
+					<h2 class="reviews__title  title title-white">Why try <span>Rhythm?</span></h2>
+					<div class="reviews__items">
+						<article class="reviews__item item-reviews">
+							<div class="item-reviews__icon">
+								<img src="img/reviews/01.svg" alt="Icon">
 							</div>
-							<div class="item-about__info">
-								<h3 class="item-about__title">Smooth Browsing</h3>
-								<div class="item-about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-							</div>
-						</article>
-						<article class="about__item item-about">
-							<div class="item-about__icon">
-								<img src="img/about/02.svg" alt="Icon">
-							</div>
-							<div class="item-about__info">
-								<h3 class="item-about__title">EASY Delivery </h3>
-								<div class="item-about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+							<div class="item-reviews__info">
+								<h3 class="item-reviews__title">Smooth Browsing</h3>
+								<div class="item-reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
 							</div>
 						</article>
-						<article class="about__item item-about">
-							<div class="item-about__icon">
-								<img src="img/about/03.svg" alt="Icon">
+						<article class="reviews__item item-reviews">
+							<div class="item-reviews__icon">
+								<img src="img/reviews/02.svg" alt="Icon">
 							</div>
-							<div class="item-about__info">
-								<h3 class="item-about__title">SwiFT PAYMENTS</h3>
-								<div class="item-about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+							<div class="item-reviews__info">
+								<h3 class="item-reviews__title">EASY Delivery </h3>
+								<div class="item-reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+							</div>
+						</article>
+						<article class="reviews__item item-reviews">
+							<div class="item-reviews__icon">
+								<img src="img/reviews/03.svg" alt="Icon">
+							</div>
+							<div class="item-reviews__info">
+								<h3 class="item-reviews__title">SwiFT PAYMENTS</h3>
+								<div class="item-reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
 							</div>
 						</article>
 					</div>
@@ -343,7 +345,7 @@
 				<div class="footer__block">
 					<div class="footer__content">
 						<div class="footer__info info-footer">
-							<a href="#" class="info-footer__logo logo-footer">
+							<a href="#" data-goto="main" class="info-footer__logo logo-footer">
 								<img class="logo-footer__icon" src="img/icon-logo.svg" alt="Logo">
 								<div class="logo-footer__text">Rhythm</div>
 							</a>
@@ -364,13 +366,13 @@
 									</button>
 									<ul class="menu-footer__list">
 										<li class="menu-footer__item">
-											<a href="#" class="menu-footer__link">Store</a>
+											<a href="#" data-goto-header data-goto="#store" class="menu-footer__link">Store</a>
 										</li>
 										<li class="menu-footer__item">
-											<a href="#" class="menu-footer__link">Collections</a>
+											<a href="#" data-goto-header data-goto="#collections" class="menu-footer__link">Collections</a>
 										</li>
 										<li class="menu-footer__item">
-											<a href="#" class="menu-footer__link">Support</a>
+											<a href="#" data-goto-header data-goto="#reviews" class="menu-footer__link">Reviews</a>
 										</li>
 									</ul>
 								</div>
@@ -408,6 +410,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230622192340"></script>
+	<script src="js/app.min.js?_v=20230624150508"></script>
 </body>
+
 </html>
