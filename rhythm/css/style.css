@@ -728,11 +728,11 @@ h6 {
   max-width: 100%;
 }
 
-.reviews {
+.about {
   background-color: #121212;
 }
 
-.reviews__items {
+.about__items {
   padding: 0rem 1.875rem;
   display: -ms-grid;
   display: grid;
@@ -745,7 +745,7 @@ h6 {
   row-gap: 1.875rem;
 }
 
-.item-reviews {
+.item-about {
   padding: 0.625rem 0.3125rem;
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -765,7 +765,7 @@ h6 {
   text-align: center;
 }
 
-.item-reviews__icon {
+.item-about__icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -782,11 +782,11 @@ h6 {
   border-radius: 1.25rem;
 }
 
-.item-reviews__icon:not(:last-child) {
+.item-about__icon:not(:last-child) {
   margin-bottom: 2.5rem;
 }
 
-.item-reviews__info {
+.item-about__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -796,7 +796,7 @@ h6 {
           flex-direction: column;
 }
 
-.item-reviews__title {
+.item-about__title {
   font-weight: 600;
   font-size: 1.125rem;
   line-height: 1.5;
@@ -805,18 +805,18 @@ h6 {
   color: #FFFFFF;
 }
 
-.item-reviews__title:not(:last-child) {
+.item-about__title:not(:last-child) {
   margin-bottom: 0.75rem;
 }
 
-.item-reviews__text {
+.item-about__text {
   font-size: 0.875rem;
   line-height: 1.5;
   text-align: center;
   text-transform: capitalize;
 }
 
-.customers__slide {
+.reviews__slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1973,11 +1973,11 @@ button.swiper-pagination-bullet {
     padding-bottom: 11.25rem;
   }
 
-  .page__customers {
+  .page__reviews {
     padding-top: 15rem;
   }
 
-  .page__customers {
+  .page__reviews {
     padding-bottom: 8.4375rem;
   }
 
@@ -2055,25 +2055,25 @@ button.swiper-pagination-bullet {
     margin-bottom: 4.6875rem;
   }
 
-  .reviews__container {
+  .about__container {
     padding-top: 5.875rem;
   }
 
-  .reviews__container {
+  .about__container {
     padding-bottom: 5.875rem;
   }
 
-  .reviews__title:not(:last-child) {
+  .about__title:not(:last-child) {
     margin-bottom: 4.6875rem;
   }
 
-  .reviews__items {
+  .about__items {
     -webkit-column-gap: 13.75rem;
        -moz-column-gap: 13.75rem;
             column-gap: 13.75rem;
   }
 
-  .customers__title:not(:last-child) {
+  .reviews__title:not(:last-child) {
     margin-bottom: 6.8125rem;
   }
 
@@ -2118,11 +2118,11 @@ button.swiper-pagination-bullet {
     padding-bottom: 1.25rem;
   }
 
-  .page__customers {
+  .page__reviews {
     padding-top: 1.25rem;
   }
 
-  .page__customers {
+  .page__reviews {
     padding-bottom: 1.25rem;
   }
 
@@ -2200,25 +2200,25 @@ button.swiper-pagination-bullet {
     margin-bottom: 1.25rem;
   }
 
-  .reviews__container {
+  .about__container {
     padding-top: 1.25rem;
   }
 
-  .reviews__container {
+  .about__container {
     padding-bottom: 1.25rem;
   }
 
-  .reviews__title:not(:last-child) {
+  .about__title:not(:last-child) {
     margin-bottom: 1.25rem;
   }
 
-  .reviews__items {
+  .about__items {
     -webkit-column-gap: 1.875rem;
        -moz-column-gap: 1.875rem;
             column-gap: 1.875rem;
   }
 
-  .customers__title:not(:last-child) {
+  .reviews__title:not(:last-child) {
     margin-bottom: 1.25rem;
   }
 
@@ -2244,15 +2244,15 @@ button.swiper-pagination-bullet {
     padding: 0rem 0rem;
   }
 
-  .reviews__items {
+  .about__items {
     padding: 0rem 0rem;
   }
 
-  .item-reviews__icon:not(:last-child) {
+  .item-about__icon:not(:last-child) {
     margin-bottom: 1.25rem;
   }
 
-  .item-reviews__title:not(:last-child) {
+  .item-about__title:not(:last-child) {
     margin-bottom: 0.3125rem;
   }
 }
@@ -2689,25 +2689,25 @@ button.swiper-pagination-bullet {
 }
 
 @supports (padding-top: clamp( 1.25rem , -3.5851648352rem  +  24.1758241758vw , 15rem )) {
-    .page__customers {
+    .page__reviews {
       padding-top: clamp( 1.25rem , -3.5851648352rem  +  24.1758241758vw , 15rem );
     }
 }
 
 @supports not (padding-top: clamp( 1.25rem , -3.5851648352rem  +  24.1758241758vw , 15rem )) {
-    .page__customers {
+    .page__reviews {
       padding-top: calc(1.25rem + 13.75 * (100vw - 20rem) / 56.875);
     }
 }
 
 @supports (padding-bottom: clamp( 1.25rem , -1.2774725275rem  +  12.6373626374vw , 8.4375rem )) {
-    .page__customers {
+    .page__reviews {
       padding-bottom: clamp( 1.25rem , -1.2774725275rem  +  12.6373626374vw , 8.4375rem );
     }
 }
 
 @supports not (padding-bottom: clamp( 1.25rem , -1.2774725275rem  +  12.6373626374vw , 8.4375rem )) {
-    .page__customers {
+    .page__reviews {
       padding-bottom: calc(1.25rem + 7.1875 * (100vw - 20rem) / 56.875);
     }
 }
@@ -2925,43 +2925,43 @@ button.swiper-pagination-bullet {
 }
 
 @supports (padding-top: clamp( 1.25rem , -0.3763736264rem  +  8.1318681319vw , 5.875rem )) {
-    .reviews__container {
+    .about__container {
       padding-top: clamp( 1.25rem , -0.3763736264rem  +  8.1318681319vw , 5.875rem );
     }
 }
 
 @supports not (padding-top: clamp( 1.25rem , -0.3763736264rem  +  8.1318681319vw , 5.875rem )) {
-    .reviews__container {
+    .about__container {
       padding-top: calc(1.25rem + 4.625 * (100vw - 20rem) / 56.875);
     }
 }
 
 @supports (padding-bottom: clamp( 1.25rem , -0.3763736264rem  +  8.1318681319vw , 5.875rem )) {
-    .reviews__container {
+    .about__container {
       padding-bottom: clamp( 1.25rem , -0.3763736264rem  +  8.1318681319vw , 5.875rem );
     }
 }
 
 @supports not (padding-bottom: clamp( 1.25rem , -0.3763736264rem  +  8.1318681319vw , 5.875rem )) {
-    .reviews__container {
+    .about__container {
       padding-bottom: calc(1.25rem + 4.625 * (100vw - 20rem) / 56.875);
     }
 }
 
 @supports (margin-bottom: clamp( 1.25rem , 0.0412087912rem  +  6.043956044vw , 4.6875rem )) {
-    .reviews__title:not(:last-child) {
+    .about__title:not(:last-child) {
       margin-bottom: clamp( 1.25rem , 0.0412087912rem  +  6.043956044vw , 4.6875rem );
     }
 }
 
 @supports not (margin-bottom: clamp( 1.25rem , 0.0412087912rem  +  6.043956044vw , 4.6875rem )) {
-    .reviews__title:not(:last-child) {
+    .about__title:not(:last-child) {
       margin-bottom: calc(1.25rem + 3.4375 * (100vw - 20rem) / 56.875);
     }
 }
 
 @supports ((-moz-column-gap: clamp( 1.875rem , -2.3008241758rem  +  20.8791208791vw , 13.75rem )) or (column-gap: clamp( 1.875rem , -2.3008241758rem  +  20.8791208791vw , 13.75rem ))) {
-    .reviews__items {
+    .about__items {
       -webkit-column-gap: clamp( 1.875rem , -2.3008241758rem  +  20.8791208791vw , 13.75rem );
          -moz-column-gap: clamp( 1.875rem , -2.3008241758rem  +  20.8791208791vw , 13.75rem );
               column-gap: clamp( 1.875rem , -2.3008241758rem  +  20.8791208791vw , 13.75rem );
@@ -2969,7 +2969,7 @@ button.swiper-pagination-bullet {
 }
 
 @supports not ((-moz-column-gap: clamp( 1.875rem , -2.3008241758rem  +  20.8791208791vw , 13.75rem )) or (column-gap: clamp( 1.875rem , -2.3008241758rem  +  20.8791208791vw , 13.75rem ))) {
-    .reviews__items {
+    .about__items {
       -webkit-column-gap: calc(1.875rem + 11.875 * (100vw - 20rem) / 56.875);
          -moz-column-gap: calc(1.875rem + 11.875 * (100vw - 20rem) / 56.875);
               column-gap: calc(1.875rem + 11.875 * (100vw - 20rem) / 56.875);
@@ -2977,13 +2977,13 @@ button.swiper-pagination-bullet {
 }
 
 @supports (margin-bottom: clamp( 1.25rem , -0.706043956rem  +  9.7802197802vw , 6.8125rem )) {
-    .customers__title:not(:last-child) {
+    .reviews__title:not(:last-child) {
       margin-bottom: clamp( 1.25rem , -0.706043956rem  +  9.7802197802vw , 6.8125rem );
     }
 }
 
 @supports not (margin-bottom: clamp( 1.25rem , -0.706043956rem  +  9.7802197802vw , 6.8125rem )) {
-    .customers__title:not(:last-child) {
+    .reviews__title:not(:last-child) {
       margin-bottom: calc(1.25rem + 5.5625 * (100vw - 20rem) / 56.875);
     }
 }
