@@ -253,6 +253,11 @@ h6 {
   transition: box-shadow 0.5s ease, -webkit-box-shadow 0.5s ease;
 }
 
+.touch .item-shop {
+  -webkit-box-shadow: 0px 1.8518518209px 3.1481480598px 0px rgba(0, 0, 0, 0), 0px 8.1481485367px 6.5185184479px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.5185203552px 25.4814815521px 0px rgba(0, 0, 0, 0.01), 0px 64.8148117065px 46.851852417px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+          box-shadow: 0px 1.8518518209px 3.1481480598px 0px rgba(0, 0, 0, 0), 0px 8.1481485367px 6.5185184479px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.5185203552px 25.4814815521px 0px rgba(0, 0, 0, 0.01), 0px 64.8148117065px 46.851852417px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+}
+
 .item-shop__body {
   position: relative;
   display: block;
@@ -402,6 +407,7 @@ h6 {
 
 .action-item__add::before {
   color: #ED165F;
+  font-size: 0.8125rem;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
@@ -818,7 +824,7 @@ h6 {
   }
 
   .page__shop {
-    padding-bottom: 3.75rem;
+    padding-bottom: 4.0625rem;
   }
 
   .items-shop {
@@ -946,6 +952,10 @@ h6 {
   .shop__text {
     padding-right: 3.25rem;
   }
+
+  .shop__items {
+    padding-bottom: 3.75rem;
+  }
 }
 
 @media (max-width: 62em) {
@@ -972,11 +982,11 @@ h6 {
   }
 
   .page__shop {
-    padding-top: 1.25rem;
+    padding-top: 1.875rem;
   }
 
   .page__shop {
-    padding-bottom: 0.625rem;
+    padding-bottom: 0.9375rem;
   }
 
   .items-shop {
@@ -1094,12 +1104,28 @@ h6 {
   .shop__text {
     padding-right: 0.9375rem;
   }
+
+  .shop__items {
+    padding-bottom: 0.625rem;
+  }
 }
 
 @media (max-width: 61.99875em) {
   [class*=__container] {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
+  }
+
+  .action-item__favorite {
+    padding: 0.8125rem;
+  }
+
+  .action-item__add::before {
+    font-size: 1rem;
+  }
+
+  .action-item__add {
+    font-size: 1rem;
   }
 
   .header__container {
@@ -1365,27 +1391,27 @@ h6 {
     }
 }
 
-@supports (padding-top: clamp( 1.25rem , 0.4642857143rem  +  3.9285714286vw , 4rem )) {
+@supports (padding-top: clamp( 1.875rem , 1.2678571429rem  +  3.0357142857vw , 4rem )) {
     .page__shop {
-      padding-top: clamp( 1.25rem , 0.4642857143rem  +  3.9285714286vw , 4rem );
+      padding-top: clamp( 1.875rem , 1.2678571429rem  +  3.0357142857vw , 4rem );
     }
 }
 
-@supports not (padding-top: clamp( 1.25rem , 0.4642857143rem  +  3.9285714286vw , 4rem )) {
+@supports not (padding-top: clamp( 1.875rem , 1.2678571429rem  +  3.0357142857vw , 4rem )) {
     .page__shop {
-      padding-top: calc(1.25rem + 2.75 * (100vw - 20rem) / 70);
+      padding-top: calc(1.875rem + 2.125 * (100vw - 20rem) / 70);
     }
 }
 
-@supports (padding-bottom: clamp( 0.625rem , -0.2678571429rem  +  4.4642857143vw , 3.75rem )) {
+@supports (padding-bottom: clamp( 0.9375rem , 0.0446428571rem  +  4.4642857143vw , 4.0625rem )) {
     .page__shop {
-      padding-bottom: clamp( 0.625rem , -0.2678571429rem  +  4.4642857143vw , 3.75rem );
+      padding-bottom: clamp( 0.9375rem , 0.0446428571rem  +  4.4642857143vw , 4.0625rem );
     }
 }
 
-@supports not (padding-bottom: clamp( 0.625rem , -0.2678571429rem  +  4.4642857143vw , 3.75rem )) {
+@supports not (padding-bottom: clamp( 0.9375rem , 0.0446428571rem  +  4.4642857143vw , 4.0625rem )) {
     .page__shop {
-      padding-bottom: calc(0.625rem + 3.125 * (100vw - 20rem) / 70);
+      padding-bottom: calc(0.9375rem + 3.125 * (100vw - 20rem) / 70);
     }
 }
 
@@ -1730,6 +1756,18 @@ h6 {
 @supports not (padding-right: clamp( 0.9375rem , 0.2767857143rem  +  3.3035714286vw , 3.25rem )) {
     .shop__text {
       padding-right: calc(0.9375rem + 2.3125 * (100vw - 20rem) / 70);
+    }
+}
+
+@supports (padding-bottom: clamp( 0.625rem , -0.2678571429rem  +  4.4642857143vw , 3.75rem )) {
+    .shop__items {
+      padding-bottom: clamp( 0.625rem , -0.2678571429rem  +  4.4642857143vw , 3.75rem );
+    }
+}
+
+@supports not (padding-bottom: clamp( 0.625rem , -0.2678571429rem  +  4.4642857143vw , 3.75rem )) {
+    .shop__items {
+      padding-bottom: calc(0.625rem + 3.125 * (100vw - 20rem) / 70);
     }
 }
 }
