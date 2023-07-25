@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230724192122">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230725195240">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -39,7 +39,7 @@
 		</header>
 		<main class="page">
 			<section class="page__main main">
-				<div class="main__container">
+				<div class="main__container" data-watch-once data-watch>
 					<div class="main__info info-main">
 						<h1 class="info-main__title">Пасажирські перевезення</h1>
 						<div class="info-main__text">
@@ -73,8 +73,9 @@
 			</section>
 			<section class="page__servises servises">
 				<div class="servises__container">
-					<h2 class="servises__title title">Чому варто замовити пасажирський трансфер Trans Gold?</h2>
-					<div class="servises__items">
+					<h2 data-watch-once data-watch class="servises__title title">Чому варто замовити пасажирський трансфер
+						Trans Gold?</h2>
+					<div class="servises__items" data-watch-once data-watch>
 						<article class="servises__item item-servises">
 							<div class="item-servises__icon">
 								<picture><source srcset="img/servises/briefcase.webp" type="image/webp"><img src="img/servises/briefcase.png" alt="Briefcase"></picture>
@@ -161,37 +162,78 @@
 					</div>
 				</div>
 			</section>
+			<section class="page__categories categories">
+				<div class="categories__container">
+					<h2 data-watch-once data-watch class="categories__title title">Послуги</h2>
+					<div class="categories__items">
+						<article class="categories__item item-categories" data-watch-once data-watch data-watch-threshold="0.1">
+							<div class="item-categories__image">
+								<picture><source srcset="img/categories/transportation.webp" type="image/webp"><img src="img/categories/transportation.jpg" alt="Transportation"></picture>
+							</div>
+							<h3 class="item-categories__title" data-watch-once data-watch>
+								пЕРЕВЕЗЕННЯ
+							</h3>
+						</article>
+						<article class="categories__item item-categories" data-watch-once data-watch data-watch-threshold="0.1">
+							<div class="item-categories__image">
+								<picture><source srcset="img/categories/parcels.webp" type="image/webp"><img src="img/categories/parcels.jpeg" alt="parcels"></picture>
+							</div>
+							<h3 class="item-categories__title">
+								ВІДПРАВЛЕННЯ ПОСИЛОК
+							</h3>
+						</article>
+						<article class="categories__item item-categories" data-watch-once data-watch data-watch-threshold="0.2">
+							<div class="item-categories__image">
+								<picture><source srcset="img/categories/ford.webp" type="image/webp"><img src="img/categories/ford.jpeg" alt="Car"></picture>
+							</div>
+							<h3 class="item-categories__title">
+								ОРЕНДА БУСА З ВОДІЄМ
+							</h3>
+						</article>
+						<article class="categories__item item-categories" data-watch-once data-watch data-watch-threshold="0.2">
+							<div class="item-categories__image">
+								<picture><source srcset="img/categories/plane.webp" type="image/webp"><img src="img/categories/plane.jpg" alt="Plane"></picture>
+							</div>
+							<h3 class="item-categories__title">
+								ТРАНСФЕР З АЕРОПОРТІВ І ВОКЗАЛІВ
+							</h3>
+						</article>
+					</div>
+				</div>
+			</section>
 			<section class="page__callback callback">
 				<div class="callback__container">
-					<div class="callback__image">
-						<picture><source srcset="img/callback/form.webp" type="image/webp"><img src="img/callback/form.jpg" alt="Image"></picture>
+					<div data-watch-once data-watch class="callback__image">
+						<picture><source srcset="img/callback/form.webp" type="image/webp"><img src="img/callback/form.png" alt="Image"></picture>
 					</div>
 					<div class="callback__content content-callback">
 						<div class="content-callback__header header-content">
-							<h2 class="header-content__title title">Замовити трансфер</h2>
-							<div class="header-content__text">
+							<h2 data-watch-once data-watch class="header-content__title title">Замовити трансфер</h2>
+							<div data-watch-once data-watch class="header-content__text">
 								<p>Наш менеджер обов'язково зателефонує вам для уточнення трансферу</p>
 							</div>
 						</div>
 						<form action="#" method="post" class="content-callback__form form-content">
 							<div class="form-content__block">
-								<div class="form-content__line">
+								<div data-watch-once data-watch class="form-content__line">
 									<input class="form-content__input" type="text" required name="user" placeholder="Ім'я" class="form-content">
 								</div>
-								<div class="form-content__line">
+								<div data-watch-once data-watch class="form-content__line">
 									<input class="form-content__input" type="tel" required name="telephone" placeholder="+380 XX XXX XX XX" class="form-content">
 								</div>
 							</div>
-							<button class="form-content__button" type="submit">Замовити</button>
+							<div data-watch-once data-watch class="form-content__button">
+								<button type="submit">Замовити</button>
+							</div>
 						</form>
 					</div>
 				</div>
 			</section>
 			<section class="page__question question">
 				<div class="question__container">
-					<h2 class="question__title title">поШИРЕНІ ЗАПИТАННЯ</h2>
+					<h2 class="question__title title" data-watch-once data-watch>поШИРЕНІ ЗАПИТАННЯ</h2>
 					<div class="question__items">
-						<article data-spollers class="question__item spollers">
+						<article class="question__item spollers">
 							<details class="spollers__item">
 								<summary class="spollers__title">Які послуги надає ваша компанія?</summary>
 								<div class="spollers__body">
@@ -201,7 +243,7 @@
 								</div>
 							</details>
 						</article>
-						<article data-spollers class="question__item spollers">
+						<article class="question__item spollers">
 							<details class="spollers__item">
 								<summary class="spollers__title">Звідки Ви відправляєтесь?</summary>
 								<div class="spollers__body">
@@ -210,7 +252,7 @@
 								</div>
 							</details>
 						</article>
-						<article data-spollers class="question__item spollers">
+						<article class="question__item spollers">
 							<details class="spollers__item">
 								<summary class="spollers__title">Чи приймаєте ви безготівковий розрахунок?</summary>
 								<div class="spollers__body">Так, ми приймаємо безготівковий розрахунок за наші послуги. Зручна
@@ -218,7 +260,7 @@
 								</div>
 							</details>
 						</article>
-						<article data-spollers class="question__item spollers">
+						<article class="question__item spollers">
 							<details class="spollers__item">
 								<summary class="spollers__title">Чи можливі знижки?</summary>
 								<div class="spollers__body">Так, ми пропонуємо знижки для дітей та пенсіонерів. Будь ласка,
@@ -227,7 +269,7 @@
 								</div>
 							</details>
 						</article>
-						<article data-spollers class="question__item spollers">
+						<article class="question__item spollers">
 							<details class="spollers__item">
 								<summary class="spollers__title">Що входить у вартість поїздки?</summary>
 								<div class="spollers__body">
@@ -236,7 +278,7 @@
 								</div>
 							</details>
 						</article>
-						<article data-spollers class="question__item spollers">
+						<article class="question__item spollers">
 							<details class="spollers__item">
 								<summary class="spollers__title">Як я можу забронювати поїздку?</summary>
 								<div class="spollers__body">
@@ -246,7 +288,7 @@
 								</div>
 							</details>
 						</article>
-						<article data-spollers class="question__item spollers">
+						<article class="question__item spollers">
 							<details class="spollers__item">
 								<summary class="spollers__title">Чи можу я передати посилку?</summary>
 								<div class="spollers__body">
@@ -254,7 +296,7 @@
 								</div>
 							</details>
 						</article>
-						<article data-spollers class="question__item spollers">
+						<article class="question__item spollers">
 							<details class="spollers__item">
 								<summary class="spollers__title">Чи можливо замовити індивідуальний трансфер?</summary>
 								<div class="spollers__body">
@@ -266,43 +308,122 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__categories categories">
-				<div class="categories__container">
-					<h2 class="categories__title title">Послуги</h2>
-					<div class="categories__items">
-						<article class="categories__item item-categories">
-							<div class="item-categories__image">
-								<picture><source srcset="img/categories/transportation.webp" type="image/webp"><img src="img/categories/transportation.jpg" alt="Transportation"></picture>
-							</div>
-							<h3 class="item-categories__title">
-								пЕРЕВЕЗЕННЯ
-							</h3>
-						</article>
-						<article class="categories__item item-categories">
-							<div class="item-categories__image">
-								<picture><source srcset="img/categories/parcels.webp" type="image/webp"><img src="img/categories/parcels.jpeg" alt="parcels"></picture>
-							</div>
-							<h3 class="item-categories__title">
-								ВІДПРАВЛЕННЯ ПОСИЛОК
-							</h3>
-						</article>
-						<article class="categories__item item-categories">
-							<div class="item-categories__image">
-								<picture><source srcset="img/categories/ford.webp" type="image/webp"><img src="img/categories/ford.jpeg" alt="Car"></picture>
-							</div>
-							<h3 class="item-categories__title">
-								ОРЕНДА БУСА З ВОДІЄМ
-							</h3>
-						</article>
-						<article class="categories__item item-categories">
-							<div class="item-categories__image">
-								<picture><source srcset="img/categories/plane.webp" type="image/webp"><img src="img/categories/plane.jpg" alt="Plane"></picture>
-							</div>
-							<h3 class="item-categories__title">
-								ТРАНСФЕР З АЕРОПОРТІВ І ВОКЗАЛІВ
-							</h3>
-						</article>
+			<section class="page__about-us about-us">
+				<div class="about-us__container">
+					<h2 class="about-us__title title" data-watch-once data-watch>Про нас</h2>
+					<div class="about-us__sub-title">Ласкаво просимо до <span>Trans-Gold</span> - вашої надійної служби
+						трансферу</div>
+					<div class="about-us__text">
+						<p>
+							<span>Trans-Gold</span> пропонує як пасажирські, так і вантажні
+							перевезення,
+							гарантуючи
+							безпроблемний досвід для всіх наших клієнтів. Незалежно від того, подорожуєте ви у справах чи
+							заради відпочинку, наші комфортабельні мікроавтобуси та професійні водії до ваших послуг. Сядьте
+							зручніше, розслабтеся і насолоджуйтеся безперешкодною поїздкою до місця призначення.
+						</p>
+						<p>
+							Ваша безпека, комфорт та зручність для нас понад усе. Наш досвідчений водій забере вас з
+							потрібного
+							місця та з максимальною обережністю доставить за вказаною адресою. Завдяки нашим
+							конкурентоспроможним цінам, наші послуги пасажирського трансферу є доступним варіантом для
+							окремих
+							осіб, сімей та груп. Подорожуйте зі стилем та комфортом з <span>Trans-Gold</span>.
+						</p>
+						<p>Окрім пасажирських перевезень, ми також спеціалізуємося на надійному перевезенні посилок.
+							Потрібно
+							відправити посилку в Австрію, Хорватію, Угорщину, Німеччину або Польщу? Ми вам допоможемо! Наша
+							безпечна та ефективна послуга трансферу посилок гарантує, що ваші вантажі прибудуть до місця
+							призначення вчасно та в ідеальному стані. Довірте нам обробку ваших цінних вантажів з
+							максимальним
+							професіоналізмом і увагою до деталей.
+						</p>
+						<p>У <span>Trans-Gold</span> ми робимо все можливе, щоб зробити вашу подорож
+							приємною. Як частина нашого прагнення
+							до задоволення потреб клієнтів, ми надаємо безкоштовну мінеральну воду під час трансферу, щоб ви
+							залишалися бадьорими. Крім того, ми розуміємо, як важливо залишатися на зв'язку, тому надаємо
+							безкоштовний Wi-Fi, щоб ви могли залишатися на зв'язку протягом усієї подорожі. Залишайтеся на
+							зв'язку, переглядайте електронну пошту або користуйтеся Інтернетом у зручний для вас час.
+						</p>
+						<p><span>Чому обирають нас?</span></p>
+						<p><span>Надійність:</span> Маючи багаторічний досвід роботи в індустрії трансферу,
+							<span>Trans-Gold</span> створив міцну
+							репутацію надійної компанії. Ви можете розраховувати на нашу пунктуальність і надання ефективних
+							послуг на кожному кроці.
+						</p>
+						<p><span>Комфорт: </span>Наші мікроавтобуси пропонують комфортне і просторе середовище, що дозволяє
+							вам
+							розслабитися і насолоджуватися поїздкою. Ми ставимо на перше місце ваш комфорт і гарантуємо
+							приємні
+							враження.
+						</p>
+						<p><span>Безпека:</span> Ваша безпека - наш головний пріоритет. Наш водій має високу кваліфікацію,
+							ліцензію та
+							дотримується всіх правил безпеки. Будьте впевнені, що ви в надійних руках протягом усього
+							трансферу.
+						</p>
+						<p>
+							<span>Конкурентоспроможні ціни:</span> Ми віримо в справедливе та прозоре ціноутворення. Наші
+							тарифи є
+							конкурентоспроможними, пропонуючи відмінне співвідношення ціни та якості без шкоди для якості
+							наших
+							послуг.
+						</p>
+						<p><span>Персоналізоване обслуговування:</span> У <span>Trans-Gold</span> ми розуміємо, що кожен
+							клієнт має унікальні вимоги. Ми
+							прагнемо надавати персоналізовані послуги, пристосовані до ваших конкретних потреб, забезпечуючи
+							незабутній і задовільний досвід
+						</p>
 					</div>
+				</div>
+			</section>
+			<section class="page__contacts contacts">
+				<div class="contacts__container">
+					<div data-watch-once data-watch class="contacts__image">
+						<picture><source srcset="img/contacts/contacts-image.webp" type="image/webp"><img src="img/contacts/contacts-image.jpg" alt="Image"></picture>
+					</div>
+					<div class="contacts__info info-contacts">
+						<h2 class="info-contacts__title title" data-watch-once data-watch>КОНТАКТИ</h2>
+						<div class="info-contacts__header header-info">
+							<h2 class="header-info__title" data-watch-once data-watch>Зв'яжіться з нами</h2>
+							<div class="header-info__text" data-watch-once data-watch>
+								Готові замовити трансфер або маєте запитання про наші послуги?
+								Зв'яжіться з нами вже сьогодні! Наша дружня та віддана команда Trans-Gold завжди готова
+								допомогти
+								вам. Зв'яжіться з нами по телефону,
+								<a href="tel:+380994180888">Viber</a>/
+								<a href="tel:+380502413088">Whatsapp</a>/
+								<a href="tel:+380958954122">telegram</a>/
+								<a href="https://www.facebook.com/profile.php?id=100092974507367" target="_blank">massanger
+								</a>або
+								<a href="TransGold.transfer@gmail.com" target="_blank">електронною поштою</a>, і
+								ми надамо вам всю необхідну інформацію для планування вашої подорожі.
+							</div>
+						</div>
+						<div class="info-contacts__social social-info" data-watch-once data-watch>
+							<div class="social-info__items">
+								<a href="tel:+380994180888" class="social-info__image">
+									<img src="img/icons/viber.svg" alt="Viber">
+								</a>
+								<a href="tel:+380502413088" class="social-info__image">
+									<img src="img/icons/whatapp.svg" alt="Whatsapp">
+								</a>
+								<a href="tel:+380958954122" class="social-info__image">
+									<img src="img/icons/telegram.svg" alt="Telegram">
+								</a>
+								<a href="https://vm.tiktok.com/ZM2fQJNjD/" target="_blank" class="social-info__image">
+									<img src="img/icons/tiktok.svg" alt="Tik Tok">
+								</a>
+								<a href="https://www.facebook.com/profile.php?id=100092974507367" target="_blank" class="social-info__image">
+									<img src="img/icons/fb.svg" alt="Facebook">
+								</a>
+								<a href="TransGold.transfer@gmail.com" target="_blank" class="social-info__image">
+									<img src="img/icons/gmail.svg" alt="Gmail">
+								</a>
+							</div>
+						</div>
+					</div>
+
 				</div>
 			</section>
 		</main>
@@ -311,7 +432,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230724192122"></script>
+	<script src="js/app.min.js?_v=20230725195240"></script>
 </body>
 
 </html>
