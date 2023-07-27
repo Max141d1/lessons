@@ -448,6 +448,10 @@ body::after {
   color: #C8A35F;
 }
 
+.callback-black {
+  background-color: red;
+}
+
 ._watcher-view .info-main__title,
 ._watcher-view .info-main__text,
 ._watcher-view .social-main__button,
@@ -1249,6 +1253,7 @@ body::after {
 
 .price {
   background-color: #393F47;
+  border-bottom: 0.3125rem solid #2F343A;
 }
 
 .table {
@@ -1280,7 +1285,7 @@ body::after {
 }
 
 .table__cell {
-  background-color: #393F47;
+  background-color: #464c54;
   padding: 0.9375rem;
 }
 
