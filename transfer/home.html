@@ -6,13 +6,37 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230725195240">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230727173819">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 	<div class="wrapper">
+		<div id="popup" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="callback__content content-callback">
+						<div class="content-callback__header header-content">
+							<h2 data-watch-once data-watch class="header-content__title">звʼязатися</h2>
+						</div>
+						<form action="#" method="post" class="content-callback__form form-content">
+							<div class="form-content__block">
+								<div data-watch-once data-watch class="form-content__line">
+									<input class="form-content__input" type="text" required name="user" placeholder="Ім'я" class="form-content">
+								</div>
+								<div data-watch-once data-watch class="form-content__line">
+									<input class="form-content__input" type="tel" required name="telephone" placeholder="+380 XX XXX XX XX" class="form-content">
+								</div>
+							</div>
+							<div data-watch-once data-watch class="form-content__button button">
+								<button type="submit">Замовити</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 		<header class="header">
 			<div class="header__container">
 				<div class="header__info info-header">
@@ -51,7 +75,9 @@
 						</div>
 					</div>
 					<div class="main__social social-main">
-						<h2 class="social-main__title">Зв'яжіться з нами:</h2>
+						<div data-watch-once data-watch class="social-main__button button">
+							<button data-popup="#popup" type="submit">Зв'яжіться з нами</button>
+						</div>
 						<div class="social-main__items">
 							<a href="tel:+380994180888" class="social-main__item">
 								<img src="img/icons/viber.svg" alt="Viber">
@@ -222,7 +248,7 @@
 									<input class="form-content__input" type="tel" required name="telephone" placeholder="+380 XX XXX XX XX" class="form-content">
 								</div>
 							</div>
-							<div data-watch-once data-watch class="form-content__button">
+							<div data-watch-once data-watch class="form-content__button button">
 								<button type="submit">Замовити</button>
 							</div>
 						</form>
@@ -231,9 +257,9 @@
 			</section>
 			<section class="page__question question">
 				<div class="question__container">
-					<h2 class="question__title title" data-watch-once data-watch>поШИРЕНІ ЗАПИТАННЯ</h2>
-					<div class="question__items">
-						<article class="question__item spollers">
+					<h2 class="question__title title">поШИРЕНІ ЗАПИТАННЯ</h2>
+					<div class="question__items" data-watch-once data-watch>
+						<article data-spollers class="question__item spollers">
 							<details class="spollers__item">
 								<summary class="spollers__title">Які послуги надає ваша компанія?</summary>
 								<div class="spollers__body">
@@ -243,7 +269,7 @@
 								</div>
 							</details>
 						</article>
-						<article class="question__item spollers">
+						<article data-spollers class="question__item spollers">
 							<details class="spollers__item">
 								<summary class="spollers__title">Звідки Ви відправляєтесь?</summary>
 								<div class="spollers__body">
@@ -252,7 +278,7 @@
 								</div>
 							</details>
 						</article>
-						<article class="question__item spollers">
+						<article data-spollers class="question__item spollers">
 							<details class="spollers__item">
 								<summary class="spollers__title">Чи приймаєте ви безготівковий розрахунок?</summary>
 								<div class="spollers__body">Так, ми приймаємо безготівковий розрахунок за наші послуги. Зручна
@@ -260,7 +286,7 @@
 								</div>
 							</details>
 						</article>
-						<article class="question__item spollers">
+						<article data-spollers class="question__item spollers">
 							<details class="spollers__item">
 								<summary class="spollers__title">Чи можливі знижки?</summary>
 								<div class="spollers__body">Так, ми пропонуємо знижки для дітей та пенсіонерів. Будь ласка,
@@ -269,7 +295,7 @@
 								</div>
 							</details>
 						</article>
-						<article class="question__item spollers">
+						<article data-spollers class="question__item spollers">
 							<details class="spollers__item">
 								<summary class="spollers__title">Що входить у вартість поїздки?</summary>
 								<div class="spollers__body">
@@ -278,7 +304,7 @@
 								</div>
 							</details>
 						</article>
-						<article class="question__item spollers">
+						<article data-spollers class="question__item spollers">
 							<details class="spollers__item">
 								<summary class="spollers__title">Як я можу забронювати поїздку?</summary>
 								<div class="spollers__body">
@@ -288,7 +314,7 @@
 								</div>
 							</details>
 						</article>
-						<article class="question__item spollers">
+						<article data-spollers class="question__item spollers">
 							<details class="spollers__item">
 								<summary class="spollers__title">Чи можу я передати посилку?</summary>
 								<div class="spollers__body">
@@ -296,7 +322,7 @@
 								</div>
 							</details>
 						</article>
-						<article class="question__item spollers">
+						<article data-spollers class="question__item spollers">
 							<details class="spollers__item">
 								<summary class="spollers__title">Чи можливо замовити індивідуальний трансфер?</summary>
 								<div class="spollers__body">
@@ -311,9 +337,12 @@
 			<section class="page__about-us about-us">
 				<div class="about-us__container">
 					<h2 class="about-us__title title" data-watch-once data-watch>Про нас</h2>
-					<div class="about-us__sub-title">Ласкаво просимо до <span>Trans-Gold</span> - вашої надійної служби
-						трансферу</div>
-					<div class="about-us__text">
+					<div class="about-us__sub-title sub-title" data-watch-once data-watch>Ласкаво просимо до
+						<span>Trans-Gold</span> - вашої надійної
+						служби
+						трансферу
+					</div>
+					<div class="about-us__text" data-watch-once data-watch>
 						<p>
 							<span>Trans-Gold</span> пропонує як пасажирські, так і вантажні
 							перевезення,
@@ -385,7 +414,7 @@
 					<div class="contacts__info info-contacts">
 						<h2 class="info-contacts__title title" data-watch-once data-watch>КОНТАКТИ</h2>
 						<div class="info-contacts__header header-info">
-							<h2 class="header-info__title" data-watch-once data-watch>Зв'яжіться з нами</h2>
+							<h2 class="header-info__title sub-title" data-watch-once data-watch>Зв'яжіться з нами</h2>
 							<div class="header-info__text" data-watch-once data-watch>
 								Готові замовити трансфер або маєте запитання про наші послуги?
 								Зв'яжіться з нами вже сьогодні! Наша дружня та віддана команда Trans-Gold завжди готова
@@ -426,13 +455,244 @@
 
 				</div>
 			</section>
+			<section class="page__price price">
+				<div class="price__container">
+					<h2 class="price__title title" data-watch-once data-watch>Ціни</h2>
+					<div class="price__content" data-watch-once data-watch>
+						<div class="price__table table">
+							<table class="table__item">
+								<tr class="table__row">
+									<th class="table__title">Послуга</th>
+									<th class="table__title">Ціна</th>
+								</tr>
+								<tr class="table__row">
+									<td class="table__cell">Індивідуальний трансфер</td>
+									<td class="table__cell">0.4 €/км</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__cell">Мінімальна вартість посилки до 10кг</td>
+									<td class="table__cell">20 €</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__cell">За посилку більшу ніж 10кг, кожен додатковий кг</td>
+									<td class="table__cell">1.5 €</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__cell">Документ</td>
+									<td class="table__cell">10 €</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__cell">Ліки</td>
+									<td class="table__cell">25 €</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__cell">Ліки</td>
+									<td class="table__cell">25 €</td>
+								</tr>
+							</table>
+						</div>
+						<div class="price__table table">
+							<h3 class="table__main-title sub-title">Хорватія (виїзд з Ужгорода)</h3>
+							<table class="table__item">
+								<tr class="table__row">
+									<th class="table__title">Місто</th>
+									<th class="table__title">Ціна</th>
+								</tr>
+								<tr class="table__row">
+									<td class="table__cell">Будапешт</td>
+									<td class="table__cell">40 €</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__cell">Вараждин</td>
+									<td class="table__cell">100 €</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__cell">Загреб</td>
+									<td class="table__cell">100 €</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__cell">Карловац</td>
+									<td class="table__cell">110 €</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__cell">Рієка</td>
+									<td class="table__cell">120 €</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__cell">Опатія</td>
+									<td class="table__cell">120 €</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__cell">Пула</td>
+									<td class="table__cell">130 €</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__cell">Пореч</td>
+									<td class="table__cell">130 €</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__cell">Медулин</td>
+									<td class="table__cell">140 €</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__cell">Будапешт / Загреб</td>
+									<td class="table__cell">50 €</td>
+								</tr>
+							</table>
+						</div>
+						<div class="price__table table">
+							<h3 class="table__main-title sub-title">АВСТРІЯ(виїзд з Ужгорода/Львова)</h3>
+							<table class="table__item">
+								<tr class="table__row">
+									<th class="table__title">Місто</th>
+									<th class="table__title">Ціна (Ужгород)</th>
+									<th class="table__title">Ціна (Львів)</th>
+								</tr>
+								<tr class="table__row">
+									<td class="table__cell">Клагенфурт</td>
+									<td class="table__cell">140 €</td>
+									<td class="table__cell">160 €</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__cell">Філлах</td>
+									<td class="table__cell">140 €</td>
+									<td class="table__cell">160 €</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__cell">Зальцбург</td>
+									<td class="table__cell">130 €</td>
+									<td class="table__cell">150 €</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__cell">Лінц</td>
+									<td class="table__cell">130 €</td>
+									<td class="table__cell">150 €</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__cell">Амштеттен</td>
+									<td class="table__cell">120 €</td>
+									<td class="table__cell">140 €</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__cell">Санкт-Пельтен</td>
+									<td class="table__cell">120 €</td>
+									<td class="table__cell">140 €</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__cell">Відень</td>
+									<td class="table__cell">100 €</td>
+									<td class="table__cell">120 €</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__cell">Грац </td>
+									<td class="table__cell">100 €</td>
+									<td class="table__cell">120 €</td>
+								</tr>
+							</table>
+						</div>
+						<div class="price__table table">
+							<h3 class="table__main-title sub-title">Німеччина(виїзд з Ужгорода/Львова)</h3>
+							<table class="table__item">
+								<tr class="table__row">
+									<th class="table__title">Місто</th>
+									<th class="table__title">Ціна (Ужгород)</th>
+									<th class="table__title">Ціна (Львів)</th>
+								</tr>
+								<tr class="table__row">
+									<td class="table__cell">Мюнхен</td>
+									<td class="table__cell">170 €</td>
+									<td class="table__cell">190 €</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__cell">Нюрнберг</td>
+									<td class="table__cell">170 €</td>
+									<td class="table__cell">190 €</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__cell">Дрезден</td>
+									<td class="table__cell">140 €</td>
+									<td class="table__cell">160 €</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__cell">Берлін</td>
+									<td class="table__cell">150 €</td>
+									<td class="table__cell">170 €</td>
+								</tr>
+							</table>
+						</div>
+						<div class="price__table table">
+							<h3 class="table__main-title sub-title">Польща (виїзд з Ужгорода/Львова)</h3>
+							<table class="table__item">
+								<tr class="table__row">
+									<th class="table__title">Місто</th>
+									<th class="table__title">Ціна (Ужгород)</th>
+									<th class="table__title">Ціна (Львів)</th>
+								</tr>
+								<tr class="table__row">
+									<td class="table__cell">Краків</td>
+									<td class="table__cell">50 €</td>
+									<td class="table__cell">70 €</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__cell">Катовіце</td>
+									<td class="table__cell">70 €</td>
+									<td class="table__cell">90 €</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__cell">Вроцлав</td>
+									<td class="table__cell">100 €</td>
+									<td class="table__cell">120 €</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__cell">Познань</td>
+									<td class="table__cell">110 €</td>
+									<td class="table__cell">130 €</td>
+								</tr>
+								<tr class="table__row">
+									<td class="table__cell">Варшава</td>
+									<td class="table__cell">120 €</td>
+									<td class="table__cell">140 €</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</section>>
+			<section class="page__callback callback">
+				<div class="callback__container">
+					<div data-watch-once data-watch class="callback__image">
+						<picture><source srcset="img/callback/form.webp" type="image/webp"><img src="img/callback/form.png" alt="Image"></picture>
+					</div>
+					<div class="callback__content content-callback">
+						<div class="content-callback__header header-content">
+							<h2 data-watch-once data-watch class="header-content__title title">Замовити трансфер</h2>
+							<div data-watch-once data-watch class="header-content__text">
+								<p>Наш менеджер обов'язково зателефонує вам для уточнення трансферу</p>
+							</div>
+						</div>
+						<form action="#" method="post" class="content-callback__form form-content">
+							<div class="form-content__block">
+								<div data-watch-once data-watch class="form-content__line">
+									<input class="form-content__input" type="text" required name="user" placeholder="Ім'я" class="form-content">
+								</div>
+								<div data-watch-once data-watch class="form-content__line">
+									<input class="form-content__input" type="tel" required name="telephone" placeholder="+380 XX XXX XX XX" class="form-content">
+								</div>
+							</div>
+							<div data-watch-once data-watch class="form-content__button button">
+								<button type="submit">Замовити</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230725195240"></script>
+	<script src="js/app.min.js?_v=20230727173819"></script>
 </body>
 
 </html>
